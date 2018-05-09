@@ -11,14 +11,15 @@ import java.util.List;
 
 public class LibraryTest {
     Library library;
-    List<Book> bookList;
-    List<Movie> filmList;
+    ArrayList<Book> bookList;
+    ArrayList<Movie> filmList;
 
     @Before
     public void setUp(){
+        Utilitaria util = new  Utilitaria();
         library = new Library();
-        bookList = new ArrayList<Book>();
-        filmList = new ArrayList<Movie>();
+        bookList = util.createBookList();
+        filmList = util.createFilmList();
     }
 
     @Test
