@@ -22,19 +22,6 @@ public class LibraryTest {
     }
 
     @Test
-    public void testCreateBookList(){
-
-        library.createBookList();
-        assertEquals(4, library.bookList.size());
-    }
-
-    @Test
-    public void testCreateFilmList(){
-        library.createBookList();
-        assertEquals(4, library.bookList.size());
-    }
-
-    @Test
     public void testCreateListBooks() {
         Book book1 = new Book("1", "TDD", "Kent", 2000);
         Book book2 = new Book("2", "Design Patterns", "Fowler", 2001);
