@@ -7,16 +7,11 @@ public class Movie extends Item {
     public Movie(String id, String name, String director, int years, int rate){
         super(id, name, years);
         this.director = director;
-        this.rate = rate;
     }
 
     public Movie(String id, String name, String director, int years) {
         super(id, name, years);
         this.director = director;
-    }
-
-    public int getRate() {
-        return rate;
     }
 
     public String getDirector() {
@@ -31,6 +26,6 @@ public class Movie extends Item {
         } else{
             possessorName = "Free";
         }
-        return String.format("%20s %20s %20s %20d %20s", this.getId(), this.getName(), this.getDirector(),  this.getYears(), this.getRate() ,  possessorName);
+        return String.format("%20s %20s %20s %20d %20s", this.getId(), this.getName(), this.getDirector(),  this.getYears(),  possessorName);
     }
 }

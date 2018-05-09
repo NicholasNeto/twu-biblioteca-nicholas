@@ -5,24 +5,17 @@ import java.util.List;
 
 public class Library {
 
-    List<Book> bookList = new ArrayList<Book>();
-    List<Movie> filmList = new ArrayList<Movie>();
+    List<Book> bookList;
+    List<Movie> filmList;
     private List<User> userList = new ArrayList<User>();
 
     private User user;
 
-    public void createBookList() {
-        bookList.add(new Book("1", "TDD", "Kent", 2000));
-        bookList.add(new Book("2", "Design Patterns", "Fowler", 2001));
-        bookList.add(new Book("3", "Harry Potter", "Kent", 2002));
-        bookList.add(new Book("4", "he Lord of the Rings", "Peter Jackson", 2003));
-    }
+    public Library() {
 
-    public void createFilmList() {
-        filmList.add(new Movie("1", "A luz", "Nicholas", 2000, 5));
-        filmList.add(new Movie("2", "Mochila Azul", "Nicols", 2001, 4));
-        filmList.add(new Movie("3", "Harry Potter", "J. K. Rowling", 2002, 8));
-        filmList.add(new Movie("4", "The Matrix", "Cara Incrivel", 2003, 8));
+        Utilitaria util = new Utilitaria();
+        bookList = util.createBookList();
+        filmList = util.createFilmList();
     }
 
     protected void createListUserAndPassword() {
@@ -55,7 +48,7 @@ public class Library {
         return logged;
     }
 
-    private String tableHeader = String.format("%20s %20s %20s %20s %20s\n", "ID", "Name", "Authors", "Years", "Status");
+    private String tableHeader = String.format("%20s %20s %20s %20s  %20s\n", "ID", "Name", "Authors", "Years",  "Status");
 
     public <T extends Item> String showMediaInTable(List<T> mediaList) {
         return tableHeader + getMediasAsString(mediaList);
@@ -63,9 +56,13 @@ public class Library {
 
     public <T extends Item> String getMediasAsString(List<T> mediaList) {
         String representation = "";
+
         for (Item media : mediaList) {
+
             if (representation.isEmpty()) {
+
                 representation += media.toString();
+
             } else {
                 representation += "\n" + media.toString();
             }
