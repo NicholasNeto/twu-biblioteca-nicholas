@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Library {
 
-    List<Book> bookList;
-    List<Movie> filmList;
-    private List<User> userList = new ArrayList<User>();
+    ArrayList<Book> bookList;
+    ArrayList<Movie> filmList;
+    private ArrayList<User> userList = new ArrayList<User>();
 
     private User user;
 
@@ -48,15 +48,15 @@ public class Library {
         return logged;
     }
 
-    private String tableHeader = String.format("%20s %20s %20s %20s  %20s\n", "ID", "Name", "Authors", "Years",  "Status");
+    private String tableHeader = String.format("%20s %20s %20s %20s %20s\n", "ID", "Name", "Authors", "Years", "Status");
 
 
     //TODO . PERGUNTAR PARA O Biharck se isso é aceitavel eu li sobre criticas e coisas boas na internet sobre o uso de tipo generico
-    public <T extends Item> String showMediaInTable(List<T> mediaList) {
+    public <T extends Item> String showMediaInTable(ArrayList<T> mediaList) {
         return tableHeader + getMediasAsString(mediaList);
     }
 
-    public <T extends Item> String getMediasAsString(List<T> mediaList) {
+    public <T extends Item> String getMediasAsString(ArrayList<T> mediaList) {
         String representation = "";
 
         for (Item media : mediaList) {
@@ -117,7 +117,7 @@ public class Library {
     }
 
     public String showUnavailableFilm() {
-        List<Movie> borrowedFilms = new ArrayList<Movie>();
+        ArrayList<Movie> borrowedFilms = new ArrayList<Movie>();
         for (Movie film : filmList) {
             if (!film.isAvailable()) {
                 borrowedFilms.add(film);
@@ -127,7 +127,7 @@ public class Library {
     }
 
     public String showUnavailableBook() {
-        List<Book> borrowedBooks = new ArrayList<Book>();
+        ArrayList<Book> borrowedBooks = new ArrayList<Book>();
         for (Book book : bookList) {
             if (!book.isAvailable()) {
                 borrowedBooks.add(book);
@@ -136,11 +136,11 @@ public class Library {
         return showMediaInTable(borrowedBooks);
     }
 
-    public void setBookList(List<Book> bookList) {
+    public void setBookList(ArrayList<Book> bookList) {
         this.bookList = bookList;
     }
 
-    public void setFilmList(List<Movie> filmList) {
+    public void setFilmList(ArrayList<Movie> filmList) {
         this.filmList = filmList;
     }
 }
