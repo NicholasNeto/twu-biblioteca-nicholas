@@ -1,16 +1,15 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.util.test;
 
+import com.twu.biblioteca.models.Book;
+import com.twu.biblioteca.models.Movie;
+import com.twu.biblioteca.util.Utilitaria;
 import org.hamcrest.CoreMatchers;
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 
 public class UtilitarioTest {
@@ -41,21 +40,21 @@ public class UtilitarioTest {
     }
 
     //TODO: Perguntar para o Biharck sobre como comparar duas listas
-//     @Test
-//    public void testCreateListBooks() {
-//
-//
-//        ArrayList<Book>  listBooksWant = new ArrayList<Book>();
-//        listBooksWant.add(new Book("1", "TDD", "Kent", 2000));
-//        listBooksWant.add(new Book("2", "Design Patterns", "Fowler", 2001));
-//        listBooksWant.add(new Book("3", "Harry Potter", "Kent", 2002));
-//        listBooksWant.add(new Book("4", "he Lord of the Rings", "Peter Jackson", 2003));
-//
-//        bookList = utilitarioTest.createBookList();
-//        Assert.assertThat(listBooksWant, CoreMatchers.is(bookList));
-//
-//
-//    }
+     @Test
+    public void qualquerNome () {
+
+         ArrayList<Book> books = new ArrayList<Book>();
+
+         books.add(new Book("1", "TDD", "Kent", 2000));
+         books.add(new Book("2", "Design Patterns", "Fowler", 2001));
+         books.add(new Book("3", "Harry Potter", "Kent", 2002));
+         books.add(new Book("4", "The Lord of the Rings", "Peter Jackson", 2003));
+
+
+         bookList = utilitarioTest.createBookList();
+         assertThat(books, CoreMatchers.is(bookList));
+
+    }
 
     @Test
     public void checkMovieSize(){

@@ -1,13 +1,13 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.services.test;
 
+import com.twu.biblioteca.models.Book;
+import com.twu.biblioteca.models.Movie;
+import com.twu.biblioteca.services.Library;
 import org.junit.Before;
 import org.junit.Test;
 import java.util.ArrayList;
-import java.util.List;
-import static org.junit.Assert.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import static org.junit.Assert.*;
 
 public class LibraryTest {
     Library library;

@@ -1,7 +1,9 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.classes.de.negocio.Book;
+import com.twu.biblioteca.classes.de.negocio.Movie;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class Utilitaria {
 

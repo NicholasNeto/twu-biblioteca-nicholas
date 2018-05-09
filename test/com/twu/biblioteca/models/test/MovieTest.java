@@ -1,6 +1,6 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.models.test;
 
-import org.junit.Before;
+import com.twu.biblioteca.models.Movie;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;

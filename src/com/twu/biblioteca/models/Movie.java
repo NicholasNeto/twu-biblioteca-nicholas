@@ -1,4 +1,6 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.classes.de.negocio;
+
+import com.twu.biblioteca.classes.de.negocio.Item;
 
 public class Movie extends Item {
     public String director;
