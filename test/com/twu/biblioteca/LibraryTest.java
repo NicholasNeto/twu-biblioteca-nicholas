@@ -22,31 +22,6 @@ public class LibraryTest {
         filmList = util.createFilmList();
     }
 
-    @Test
-    public void testCreateListBooks() {
-        Book book1 = new Book("1", "TDD", "Kent", 2000);
-        Book book2 = new Book("2", "Design Patterns", "Fowler", 2001);
-        Book book3 = new Book("3", "Harry Potter", "Kent", 2002);
-        Book book4 = new Book("4", "he Lord of the Rings", "Peter Jackson", 2003);
-        bookList.add(book1);
-        bookList.add(book2);
-        bookList.add(book3);
-        bookList.add(book4);
-        assertTrue(bookList.contains(book1));
-    }
-
-    @Test
-    public void testCreateListFilm() {
-        Movie film1 = new Movie("1", "A luz", "Nicholas", 2015, 8);
-        Movie film2 = new Movie("2", "Mochila Azul", "Nicols", 2014, 5);
-        Movie film3 = new Movie("1", "A luz", "Nicholas", 2015, 4);
-        Movie film4 = new Movie("2", "Mochila Azul", "Nicols", 2014,6);
-        filmList.add(film1);
-        filmList.add(film2);
-        filmList.add(film3);
-        filmList.add(film4);
-        assertTrue(filmList.contains(film1));
-    }
 
     @Test
     public void testShowManyBooks(){
