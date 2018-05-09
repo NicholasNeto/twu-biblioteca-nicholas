@@ -1,7 +1,6 @@
-package com.twu.biblioteca.classes.de.negocio;
+package com.twu.biblioteca.models;
 
-import com.twu.biblioteca.StatusEnum;
-import com.twu.biblioteca.User;
+import com.twu.biblioteca.services.StatusEnum;
 
 public abstract class Item {
 

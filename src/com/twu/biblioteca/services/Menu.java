@@ -1,4 +1,6 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.services;
+
+import com.twu.biblioteca.services.Library;
 
 import java.util.Scanner;
 

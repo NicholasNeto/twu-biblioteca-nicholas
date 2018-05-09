@@ -1,7 +1,7 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.util;
 
-import com.twu.biblioteca.classes.de.negocio.Book;
-import com.twu.biblioteca.classes.de.negocio.Movie;
+import com.twu.biblioteca.models.Book;
+import com.twu.biblioteca.models.Movie;
 
 import java.util.ArrayList;
 

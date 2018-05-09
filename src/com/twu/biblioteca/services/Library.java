@@ -1,5 +1,6 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.services;
 
+import com.twu.biblioteca.models.User;
 import com.twu.biblioteca.models.Book;
 import com.twu.biblioteca.models.Item;
 import com.twu.biblioteca.models.Movie;
@@ -9,8 +10,8 @@ import java.util.ArrayList;
 
 public class Library {
 
-    ArrayList<Book> bookList;
-    ArrayList<Movie> filmList;
+    public ArrayList<Book> bookList;
+    public ArrayList<Movie> filmList;
     private ArrayList<User> userList = new ArrayList<User>();
 
     private User user;
@@ -22,7 +23,7 @@ public class Library {
         filmList = util.createFilmList();
     }
 
-    protected void createListUserAndPassword() {
+    public void createListUserAndPassword() {
         User user1 = new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1");
         User user2 = new User("12", "Thalyta", "Thalyta@gmail.com", 9899999, "12");
         User user3 = new User("123", "Erica", "Erica@gmail.com", 123456789, "123");

@@ -1,10 +1,10 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.models;
 
 public class Book extends Item {
 
     private String author;
 
-    Book(String id, String name, String author, int years) {
+    public Book(String id, String name, String author, int years) {
         super(id, name, years);
         this.author = author;
     }
@@ -23,7 +23,16 @@ public class Book extends Item {
     public String getAuthor() { return author; }
 
 
+    @Override
+    public boolean equals(Object obj) {
 
-};
+         Book book = (Book) obj;
+         if(book.getId().equals( this.getId()) &&
+                  book.getName().equals(this.getName())){
+                return true;
+        }
+            return false;
+    }
+}
 
 
