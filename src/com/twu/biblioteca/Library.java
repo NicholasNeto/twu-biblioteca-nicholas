@@ -50,6 +50,8 @@ public class Library {
 
     private String tableHeader = String.format("%20s %20s %20s %20s  %20s\n", "ID", "Name", "Authors", "Years",  "Status");
 
+
+    //TODO . PERGUNTAR PARA O Biharck se isso é aceitavel eu li sobre criticas e coisas boas na internet sobre o uso de tipo generico
     public <T extends Item> String showMediaInTable(List<T> mediaList) {
         return tableHeader + getMediasAsString(mediaList);
     }
@@ -59,6 +61,8 @@ public class Library {
 
         for (Item media : mediaList) {
 
+            //TODO   Biharck tu dinha me falado pra usar o Enum , eu ainda não consegui usar isso e nem entender pode usar isso no lugar
+            //TODO   ou posso usar o equals("")
             if (representation.isEmpty()) {
 
                 representation += media.toString();
