@@ -15,10 +15,11 @@ public class Utilitaria {
 
         ArrayList<Book> books = new ArrayList<Book>();
 
+
         books.add(new Book("1", "TDD", "Kent", 2000));
         books.add(new Book("2", "Design Patterns", "Fowler", 2001));
         books.add(new Book("3", "Harry Potter", "Kent", 2002));
-        books.add(new Book("4", "he Lord of the Rings", "Peter Jackson", 2003));
+        books.add(new Book("4", "The Lord of the Rings", "Peter Jackson", 2003));
 
         return books;
     }
