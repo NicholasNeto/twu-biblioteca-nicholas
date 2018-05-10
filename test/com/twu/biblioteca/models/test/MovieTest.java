@@ -2,8 +2,6 @@ package com.twu.biblioteca.models.test;
 
 import com.twu.biblioteca.models.Movie;
 import org.junit.Test;
-
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertEquals;
 
 public class MovieTest {
