@@ -1,6 +1,6 @@
 package com.twu.biblioteca.models;
 
-import com.twu.biblioteca.services.StatusEnum;
+import com.twu.biblioteca.models.StatusEnum;
 
 public abstract class Item {
 
