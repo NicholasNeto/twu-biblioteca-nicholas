@@ -2,6 +2,7 @@ package com.twu.biblioteca.services.test;
 
 import com.twu.biblioteca.models.Book;
 import com.twu.biblioteca.models.Movie;
+import com.twu.biblioteca.models.User;
 import com.twu.biblioteca.services.Library;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,12 +15,14 @@ public class LibraryTest {
     private ArrayList<Book> bookList;
     private ArrayList<Movie> movieList;
     private Book bookTdd;
+    private User user;
 
 
     @Before
     public void setUp(){
-
+        user = new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1313");
         library = new Library();
+        library.setUser(user);
         bookList = new ArrayList<Book>();
         movieList = new ArrayList<Movie>();
 
@@ -29,6 +32,7 @@ public class LibraryTest {
 
         movieList.add(new Movie("1", "The Matrix", "Nick", 2015));
         library.setFilmList(movieList);
+
     }
     
     @Test
@@ -119,5 +123,16 @@ public class LibraryTest {
         assertEquals(String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
                 "ID", "Name","Authors", "Years", "Status", "1", "The Matrix", "Nick", 2015, "Free"), library.showMediaInTable(movieList));
     }
+
+    @Test
+    public void shouldSeeBooksUnavailable(){
+
+        String expect = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
+                "ID", "Name","Authors", "Years", "Status", "1", "TDD", "Kent", 2005, "Nicholas");
+
+        library.borrowLibraryBook("1");
+        assertEquals(expect, library.showUnavailableBook());
+    }
+
 
 }
