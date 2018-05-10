@@ -25,4 +25,20 @@ public class User {
     public int getPhone() { return phone; }
 
     public String getPassword() { return password; }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        User user = (User) obj;
+
+        if(user.getIdUser().equals( this.idUser)
+                && user.getName().equals(this.name)
+                && user.getEmail().equals(this.email)
+                && user.getPhone() == this.phone
+                && user.getPassword().equals(this.password))
+        {
+            return true;
+        }
+            return false;
+    }
 }
