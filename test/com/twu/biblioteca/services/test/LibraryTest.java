@@ -10,10 +10,10 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    Library library;
-    ArrayList<Book> bookList;
-    ArrayList<Movie> filmList;
-    Book book;
+    private Library library;
+    private ArrayList<Book> bookList;
+    private ArrayList<Movie> movieList;
+    private Book bookTdd;
 
 
     @Before
@@ -21,20 +21,81 @@ public class LibraryTest {
 
         library = new Library();
         bookList = new ArrayList<Book>();
-        filmList = new ArrayList<Movie>();
+        movieList = new ArrayList<Movie>();
 
-
-        book = new Book("1", "TDD", "Kent", 2005);
-        bookList.add(book);
+        bookTdd = new Book("1", "TDD", "Kent", 2005);
+        bookList.add(bookTdd);
         library.setBookList(bookList);
 
-        filmList.add(new Movie("1", "The Matrix", "Nick", 2015));
-        library.setFilmList(filmList);
+        movieList.add(new Movie("1", "The Matrix", "Nick", 2015));
+        library.setFilmList(movieList);
+    }
+    
+    @Test
+    public void shuldLendABookWithSuccessful(){
+
+        String borrowMessage = library.borrowLibraryBook("1");
+
+        assertEquals("Thank you! Enjoy the book", borrowMessage);
     }
 
+    @Test
+    public void shouldNotLendABook(){
+
+        library.borrowLibraryBook("1");
+        assertEquals("This book is not available", library.borrowLibraryBook("3"));
+    }
 
     @Test
-    public void testShowManyBooks(){
+    public void shouldReturnBookWithSuccessful(){
+
+        library.borrowLibraryBook("1");
+        assertEquals("Thank you for returning the book", library.returnBookToTheLibrary("1"));
+    }
+
+    @Test
+    public void shouldNotReturnBook (){
+
+        library.borrowLibraryBook("1");
+        library.returnBookToTheLibrary("1");
+
+        assertEquals("This is not a valid book to return", library.returnBookToTheLibrary("3"));
+        assertTrue(library.bookList.contains(bookTdd));
+    }
+
+    @Test
+    public void shuldLendAMovieWithSuccessful(){
+
+        String borrowMessage = library.borrowLibraryFilm("1");
+
+        assertEquals("Thank you! Enjoy the film", borrowMessage);
+    }
+
+    @Test
+    public void shouldNotLendAMovie(){
+
+        library.borrowLibraryFilm("1");
+        assertEquals("This film is not available", library.borrowLibraryFilm("2"));
+    }
+
+    @Test
+    public void shouldReturnMovieWithSuccessful(){
+
+        library.borrowLibraryFilm("1");
+        assertEquals("Thank you for returning the film", library.returnFilmToTheLibrary("1"));
+    }
+
+    @Test
+    public void shouldNotReturnMovie(){
+
+        library.borrowLibraryFilm("1");
+        library.returnFilmToTheLibrary("1");
+
+        assertEquals("This is not a valid film to return", library.returnFilmToTheLibrary("2"));
+    }
+
+    @Test
+    public void shouldShowManyBooks(){
         ArrayList<Book> _bookList = new ArrayList<Book>();
 
         _bookList.add(new Book("1","TDD","Kent", 2005));
@@ -44,90 +105,19 @@ public class LibraryTest {
         assertEquals(String.format("%20s %20s %20s %20d %20s\n%20s %20s %20s %20d %20s", "1",
                 "TDD", "Kent", 2005, "Free","2", "Design Patterns", "Fowler", 2004, "Free" ), library.getMediasAsString(_bookList));
     }
-
-
+    
     @Test
-    public void testGivenBookListShowMediaTable(){
+    public void shouldShowATableOfBooks(){
 
         assertEquals(String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
                 "ID", "Name","Authors", "Years", "Status", "1", "TDD", "Kent", 2005, "Free"), library.showMediaInTable(bookList));
     }
 
     @Test
-    public void testGivenFilmListShowMediaTable(){
+    public void shouldShowATableOfMovies(){
 
         assertEquals(String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
-                "ID", "Name","Authors", "Years", "Status", "1", "The Matrix", "Nick", 2015, "Free"), library.showMediaInTable(filmList));
-    }
-
-    @Test
-    public void testSucessfulBorrowBook(){
-
-        String borrowMessage = library.borrowLibraryBook("1");
-
-        assertEquals("Thank you! Enjoy the book", borrowMessage);
-    }
-
-    @Test
-    public void testUnsuccessfulBorrowBook(){
-
-        library.borrowLibraryBook("1");
-        assertEquals("This book is not available", library.borrowLibraryBook("3"));
-    }
-
-    @Test
-    public void testSuccessfulReturnBook(){
-
-        library.borrowLibraryBook("1");
-        assertEquals("Thank you for returning the book", library.returnBookToTheLibrary("1"));
-    }
-
-    @Test
-    public void testUnsuccessfulReturnBook(){
-
-        library.setBookList(bookList);
-        library.borrowLibraryBook("1");
-        library.returnBookToTheLibrary("1");
-
-        assertEquals("This is not a valid book to return", library.returnBookToTheLibrary("3"));
-        assertTrue(library.bookList.contains(book));
-    }
-
-    @Test
-    public void testSucessfulBorrowFilm(){
-
-        library.setFilmList(filmList);
-        String borrowMessage = library.borrowLibraryFilm("1");
-
-        assertEquals("Thank you! Enjoy the film", borrowMessage);
-    }
-
-    @Test
-    public void testUnsuccessfulBorrowFilm(){
-
-        library.setFilmList(filmList);
-        library.borrowLibraryFilm("1");
-
-        assertEquals("This film is not available", library.borrowLibraryFilm("2"));
-    }
-
-    @Test
-    public void testSuccessfulReturnFilm(){
-
-        library.setFilmList(filmList);
-        library.borrowLibraryFilm("1");
-
-        assertEquals("Thank you for returning the film", library.returnFilmToTheLibrary("1"));
-    }
-
-    @Test
-    public void testUnsuccessfulReturnFilm(){
-
-        library.setFilmList(filmList);
-        library.borrowLibraryFilm("1");
-        library.returnFilmToTheLibrary("1");
-
-        assertEquals("This is not a valid film to return", library.returnFilmToTheLibrary("2"));
+                "ID", "Name","Authors", "Years", "Status", "1", "The Matrix", "Nick", 2015, "Free"), library.showMediaInTable(movieList));
     }
 
 }
