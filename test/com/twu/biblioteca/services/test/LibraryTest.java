@@ -20,14 +20,16 @@ public class LibraryTest {
     public void setUp(){
 
         library = new Library();
-
         bookList = new ArrayList<Book>();
         filmList = new ArrayList<Movie>();
 
-        book = new Book("1", "TDD", "Kent", 2005);
 
+        book = new Book("1", "TDD", "Kent", 2005);
         bookList.add(book);
         library.setBookList(bookList);
+
+        filmList.add(new Movie("1", "The Matrix", "Nick", 2015));
+        library.setFilmList(filmList);
     }
 
 
@@ -53,8 +55,7 @@ public class LibraryTest {
 
     @Test
     public void testGivenFilmListShowMediaTable(){
-        filmList.add(new Movie("1", "The Matrix", "Nick", 2015));
-        library.setFilmList(filmList);
+
         assertEquals(String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
                 "ID", "Name","Authors", "Years", "Status", "1", "The Matrix", "Nick", 2015, "Free"), library.showMediaInTable(filmList));
     }
@@ -94,9 +95,7 @@ public class LibraryTest {
 
     @Test
     public void testSucessfulBorrowFilm(){
-        Movie film = new Movie("1", "TDD", "Kent", 2005);
 
-        filmList.add(film);
         library.setFilmList(filmList);
         String borrowMessage = library.borrowLibraryFilm("1");
 
@@ -105,9 +104,7 @@ public class LibraryTest {
 
     @Test
     public void testUnsuccessfulBorrowFilm(){
-        Movie film = new Movie("1", "TDD", "Kent", 2005);
 
-        filmList.add(film);
         library.setFilmList(filmList);
         library.borrowLibraryFilm("1");
 
@@ -116,9 +113,7 @@ public class LibraryTest {
 
     @Test
     public void testSuccessfulReturnFilm(){
-        Movie film = new Movie("1", "TDD", "Kent", 2005);
 
-        filmList.add(film);
         library.setFilmList(filmList);
         library.borrowLibraryFilm("1");
 
@@ -127,9 +122,7 @@ public class LibraryTest {
 
     @Test
     public void testUnsuccessfulReturnFilm(){
-        Movie film = new Movie("1", "TDD", "Kent", 2005);
 
-        filmList.add(film);
         library.setFilmList(filmList);
         library.borrowLibraryFilm("1");
         library.returnFilmToTheLibrary("1");
