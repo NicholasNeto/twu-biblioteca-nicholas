@@ -4,7 +4,9 @@ public class Movie extends Item {
     public String director;
     public int rate;
 
-    public Movie(String id, String name, String director, int years, int rate){
+
+    //TODO   Podemos falar sobre sobrecarga de construtor.
+    public Movie(String id, String name, String director, int years, int rate) {
         super(id, name, years);
         this.director = director;
     }
@@ -21,11 +23,27 @@ public class Movie extends Item {
     @Override
     public String toString() {
         String possessorName;
-        if (this.possessor != null){
+        if (this.possessor != null) {
             possessorName = this.possessor.getName();
-        } else{
+        } else {
             possessorName = "Free";
         }
-        return String.format("%20s %20s %20s %20d %20s", this.getId(), this.getName(), this.getDirector(),  this.getYears(),  possessorName);
+        return String.format("%20s %20s %20s %20d %20s", this.getId(), this.getName(), this.getDirector(), this.getYears(), possessorName);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        Movie movie = (Movie) obj;
+
+        if (movie.getId().equals(this.getId())
+                && movie.getName().equals(this.getName())
+                && movie.getDirector().equals(this.getDirector())
+                && movie.getYears() == getYears())
+        {
+            return true;
+        }
+            return false;
+
     }
 }
