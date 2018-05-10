@@ -11,6 +11,7 @@ public class Utilitaria {
     public Utilitaria() {
         createBookList();
         createFilmList();
+        createListUserAndPassword();
 
     }
 
