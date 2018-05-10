@@ -25,6 +25,10 @@ public class Library {
     }
 
 
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     private boolean logged = false;
 
     public boolean isLogged() {
@@ -45,7 +49,7 @@ public class Library {
 
     private String tableHeader = String.format("%20s %20s %20s %20s %20s\n", "ID", "Name", "Authors", "Years", "Status");
 
-    
+
     public <T extends Item> String showMediaInTable(ArrayList<T> mediaList) {
         return tableHeader + getMediasAsString(mediaList);
     }
