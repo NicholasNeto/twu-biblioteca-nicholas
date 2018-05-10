@@ -127,12 +127,21 @@ public class LibraryTest {
     @Test
     public void shouldSeeBooksUnavailable(){
 
-        String expect = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
+        String expectBooksUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
                 "ID", "Name","Authors", "Years", "Status", "1", "TDD", "Kent", 2005, "Nicholas");
 
         library.borrowLibraryBook("1");
-        assertEquals(expect, library.showUnavailableBook());
+        assertEquals(expectBooksUnavailableList, library.showUnavailableBook());
     }
 
+    @Test
+    public void shouldSeeMoviesUnavailable(){
+
+        String expectMoviesUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
+                "ID", "Name","Authors", "Years", "Status", "1", "The Matrix", "Nick", 2015, "Nicholas");
+
+        library.borrowLibraryFilm("1");
+        assertEquals(expectMoviesUnavailableList, library.showUnavailableFilm());
+    }
 
 }
