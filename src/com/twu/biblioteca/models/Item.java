@@ -18,8 +18,6 @@ public abstract class Item {
 
     }
 
-//    public abstract String exemplo();
-
     boolean available = true;
 
     public boolean isAvailable(){
