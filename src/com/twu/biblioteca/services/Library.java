@@ -65,13 +65,10 @@ public class Library {
         String representation = "";
 
         for (Item media : mediaList) {
-
             //TODO   Biharck tu dinha me falado pra usar o Enum , eu ainda não consegui usar isso e nem entender pode usar isso no lugar
             //TODO   ou posso usar o equals("")
             if (representation.isEmpty()) {
-
                 representation += media.toString();
-
             } else {
                 representation += "\n" + media.toString();
             }
