@@ -12,7 +12,7 @@ public class Library {
 
     public ArrayList<Book> bookList;
     public ArrayList<Movie> filmList;
-    private ArrayList<User> userList = new ArrayList<User>();
+    private ArrayList<User> userList;
 
     private User user;
 
@@ -21,19 +21,9 @@ public class Library {
         Utilitaria util = new Utilitaria();
         bookList = util.createBookList();
         filmList = util.createFilmList();
+        userList = util.createListUserAndPassword();
     }
 
-    public void createListUserAndPassword() {
-        User user1 = new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1");
-        User user2 = new User("12", "Thalyta", "Thalyta@gmail.com", 9899999, "12");
-        User user3 = new User("123", "Erica", "Erica@gmail.com", 123456789, "123");
-        User user4 = new User("1234", "Katia", "Katia@gmail.com", 123456789, "1234");
-
-        userList.add(user1);
-        userList.add(user2);
-        userList.add(user3);
-        userList.add(user4);
-    }
 
     private boolean logged = false;
 
