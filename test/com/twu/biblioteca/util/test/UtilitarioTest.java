@@ -15,15 +15,14 @@ import static org.junit.Assert.*;
 public class UtilitarioTest {
 
     ArrayList<Book> bookList ;
-    List<Movie> filmList;
-
+    ArrayList<Movie> filmList;
 
     Utilitaria utilitarioTest = new Utilitaria();
 
     @Test
     public void checkListSize(){
-        assertNull(bookList);
 
+        assertNull(bookList);
         int desiredSizeAfterCallingMethod = 4;
         bookList = utilitarioTest.createBookList();
         assertEquals(desiredSizeAfterCallingMethod, bookList.size());
@@ -31,40 +30,35 @@ public class UtilitarioTest {
 
     @Test
     public void checkListAttributesToBook(){
-        bookList = utilitarioTest.createBookList();
 
+        bookList = utilitarioTest.createBookList();
         assertEquals("1",  bookList.get(0).getId());
         assertEquals("TDD",  bookList.get(0).getName());
         assertEquals("Kent",  bookList.get(0).getAuthor());
         assertEquals(2000,  bookList.get(0).getYears());
     }
 
-    //TODO: Perguntar para o Biharck sobre como comparar duas listas
      @Test
     public void qualquerNome () {
 
          ArrayList<Book> books = new ArrayList<Book>();
-
          books.add(new Book("1", "TDD", "Kent", 2000));
          books.add(new Book("2", "Design Patterns", "Fowler", 2001));
          books.add(new Book("3", "Harry Potter", "Kent", 2002));
          books.add(new Book("4", "The Lord of the Rings", "Peter Jackson", 2003));
 
-
          bookList = utilitarioTest.createBookList();
          assertThat(books, CoreMatchers.is(bookList));
-
     }
 
     @Test
     public void checkMovieSize(){
-        assertNull(filmList);
 
+        assertNull(filmList);
         int desiredSizeAfterCallingMethod = 4;
         filmList = utilitarioTest.createFilmList();
         assertEquals(desiredSizeAfterCallingMethod, filmList.size());
     }
-
 
     @Test
     public void checkListAttributesToMovie(){
@@ -76,6 +70,4 @@ public class UtilitarioTest {
         assertEquals(2000,  filmList.get(0).getYears());
 
     }
-
-
 }
