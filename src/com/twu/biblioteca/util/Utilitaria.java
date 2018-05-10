@@ -2,6 +2,7 @@ package com.twu.biblioteca.util;
 
 import com.twu.biblioteca.models.Book;
 import com.twu.biblioteca.models.Movie;
+import com.twu.biblioteca.models.User;
 
 import java.util.ArrayList;
 
@@ -38,4 +39,15 @@ public class Utilitaria {
         return movies;
     }
 
+    public ArrayList<User> createListUserAndPassword() {
+
+        ArrayList<User> users = new ArrayList<User>();
+
+        users.add(new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1313"));
+        users.add(new User("12", "Thalyta", "Thalyta@gmail.com", 9899999, "12"));
+        users.add(new User("123", "Erica", "Erica@gmail.com", 123456789, "123"));
+        users.add(new User("1234", "Katia", "Katia@gmail.com", 123456789, "1234"));
+
+        return users;
+    }
 }
