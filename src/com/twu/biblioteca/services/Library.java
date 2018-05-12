@@ -1,51 +1,31 @@
 package com.twu.biblioteca.services;
 
-import com.twu.biblioteca.models.User;
-import com.twu.biblioteca.models.Book;
-import com.twu.biblioteca.models.Item;
-import com.twu.biblioteca.models.Movie;
+import com.twu.biblioteca.models.*;
 import com.twu.biblioteca.util.Utilitaria;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Library {
 
-    public ArrayList<Book> bookList;
-    public ArrayList<Movie> filmList;
+
+    public ArrayList<Item> itemsList;
+
+
     private ArrayList<User> userList;
+    private ArrayList<Item> itemList;
 
-    private User user;
-
-    public Library() {
+    public Library(User user) {
 
         Utilitaria util = new Utilitaria();
-        bookList = util.createBookList();
-        filmList = util.createFilmList();
+        itemList = util.createItemsList();
+
         userList = util.createListUserAndPassword();
+        //this.user = user;
+
     }
 
 
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    private boolean logged = false;
-
-    public boolean isLogged() {
-        return this.logged;
-    }
-
-    public boolean login(String idUser, String password) {
-        for (User user : userList) {
-            if (idUser.equals(user.getIdUser()) && password.equals(user.getPassword())) {
-                logged = true;
-                this.user = user;
-                System.out.println("Welcome " + user.getName());
-                System.out.println("Email: " + user.getEmail() + " Phone: " + user.getPhone());
-            }
-        }
-        return logged;
-    }
 
     private String tableHeader = String.format("%20s %20s %20s %20s %20s\n", "ID", "Name", "Authors", "Years", "Status");
 
