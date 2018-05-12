@@ -8,6 +8,7 @@ public class User {
     private int phone;
     private String password;
 
+
     public User(String idUser, String name, String email, int phone, String password) {
         this.idUser = idUser;
         this.name = name;
@@ -15,6 +16,8 @@ public class User {
         this.phone = phone;
         this.password = password;
     }
+
+    private boolean logged = false;
 
     public String getIdUser() { return idUser; }
 
@@ -25,6 +28,15 @@ public class User {
     public int getPhone() { return phone; }
 
     public String getPassword() { return password; }
+
+
+    public boolean isLogged() {
+        return logged;
+    }
+
+    public void setLogged(boolean logged) {
+        this.logged = logged;
+    }
 
     @Override
     public boolean equals(Object obj) {
