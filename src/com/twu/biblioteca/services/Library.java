@@ -4,28 +4,28 @@ import com.twu.biblioteca.models.*;
 import com.twu.biblioteca.util.Utilitaria;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class Library {
 
 
-    public ArrayList<Item> itemsList;
-
-
+    private ArrayList<Item> itemsList;
     private ArrayList<User> userList;
-    private ArrayList<Item> itemList;
+
 
     public Library(User user) {
 
         Utilitaria util = new Utilitaria();
-        itemList = util.createItemsList();
+        itemsList = util.createItemsList();
 
         userList = util.createListUserAndPassword();
         //this.user = user;
 
     }
 
-
+    public ArrayList<Item> getItemsList() {
+        return itemsList;
+    }
 
     private String tableHeader = String.format("%20s %20s %20s %20s %20s\n", "ID", "Name", "Authors", "Years", "Status");
 
@@ -52,10 +52,11 @@ public class Library {
 
 
     public ItemsLibrary getItemLibraryAvaible() {
+
         ArrayList<Book> listBookAvaible = new ArrayList<Book>();
         ArrayList<Movie> listMovieAvaible = new ArrayList<Movie>();
 
-        for(Item item :itemList){
+        for(Item item :itemsList){
             if(item instanceof Book){
                 if(item.getStatusEnum() == StatusEnum.AVAILABLE){
                     listBookAvaible.add((Book) item);
@@ -73,65 +74,66 @@ public class Library {
 
 
     public String borrowLibraryMedia(String id) {
-        for(Item item :itemList){
+        String message = "LOL";
+
+        for(Item item :itemsList){
             if(item.getId().equals(id)){
                 if(item instanceof Book){
-                    item.setStatusEnum(StatusEnum.UNAVAILABLE);
-                    item.toString();
-                    return "Thank you! Enjoy the book";
+                    if(item.getStatusEnum() == StatusEnum.AVAILABLE){
+                        item.setStatusEnum(StatusEnum.UNAVAILABLE);
+                        message =  "Thank you! Enjoy the book";
+                    } else {
+                        message =  "That book is not available.";
+                    }
+
                 }else if(item instanceof Movie){
-                    item.setStatusEnum(StatusEnum.UNAVAILABLE);
-                    return "Thank you! Enjoy the movie";
+                    if(item.getStatusEnum() == StatusEnum.AVAILABLE){
+                        item.setStatusEnum(StatusEnum.UNAVAILABLE);
+                        message =  "Thank you! Enjoy the movie";
+                    } else{
+                        message = "That movie  is not available.";
+                    }
                 }
             }
         }
-        return "This book is not available";
+        return message;
     }
 
     public String returMediaToTheLibrary(String id) {
-        for(Item item :itemList){
+
+        String message = "LOL";
+
+        for(Item item :itemsList){
             if(item.getId().equals(id)){
                 if(item instanceof Book){
-//                    book.lendToUser(this.user);
-                    item.setStatusEnum(StatusEnum.AVAILABLE);
-                    return "Thank you for returning the Book";
+                    if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
+                        item.setStatusEnum(StatusEnum.AVAILABLE);
+                        message =  "Thank you for returning the book";
+                    } else {
+                        message =  "This is not a valid book to return";
+                    }
                 }else if(item instanceof Movie){
-                    item.setStatusEnum(StatusEnum.AVAILABLE);
-                    return "Thank you for returning the Movie";
+
+                    if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
+                        item.setStatusEnum(StatusEnum.AVAILABLE);
+                        message =  "Thank you for returning the movie";
+                    } else {
+                        message =  "This is not a valid movie to return";
+                    }
                 }
             }
         }
-        return "This is not a valid Media to return";
+        return message;
     }
 
 
 
-//    public String showUnavailableFilm() {
-//        ArrayList<Movie> borrowedFilms = new ArrayList<Movie>();
-//        for (Movie film : filmList) {
-//            if (!film.isAvailable()) {
-//                borrowedFilms.add(film);
-//            }
-//        }
-//
-//
-//        return showMediaInTable(borrowedFilms);
-//    }
-//
-//    public String showUnavailableBook() {
-//        ArrayList<Book> borrowedBooks = new ArrayList<Book>();
-//        for (Book book : bookList) {
-//            if (!book.isAvailable()) {
-//                borrowedBooks.add(book);
-//            }
-//        }
-//        return showMediaInTable(borrowedBooks);
-//    }
 
     public ItemsLibrary getItemsUnavailable(){
         ArrayList<Book> bookUnavailableList = new ArrayList<Book>();
         ArrayList<Movie> movieUnavailableList = new ArrayList<Movie>();
-        for (Item item: itemList) {
+
+        for (Item item: itemsList) {
             if(item instanceof Book){
                 if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
                     bookUnavailableList.add((Book) item);
