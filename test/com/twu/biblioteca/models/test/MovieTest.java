@@ -21,16 +21,15 @@ public class MovieTest {
         assertEquals("The Matrix", movieMatrix.getName());
         assertEquals("Lilly Wachowski", movieMatrix.director);
         assertEquals(2015, movieMatrix.getYears());
+        assertEquals("AVAILABLE", movieMatrix.getStatusEnum().toString());
     }
 
 
     @Test
     public void shouldSeeTheAttributesOfAMovieSuccessfully(){
 
-        String expect = String.format("%20s %20s %20s %20d %20s", "1", "The Matrix", "Lilly Wachowski", 2015, "Free");
+        String expect = String.format("%20s %20s %20s %20d %20s", "1", "The Matrix", "Lilly Wachowski", 2015, "AVAILABLE");
         assertEquals(expect, movieMatrix.toString());
     }
-
-
 
 }
