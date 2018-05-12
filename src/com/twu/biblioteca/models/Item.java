@@ -1,41 +1,34 @@
 package com.twu.biblioteca.models;
 
-import com.twu.biblioteca.models.StatusEnum;
-
 public abstract class Item {
 
 
     private String id;
     private String name;
-    private int years;
+    private int year;
     private StatusEnum statusEnum;
     User possessor;
 
-    Item (String id, String name, int years){
+    Item (String id, String name, int year){
         this.id = id;
         this.name = name;
-        this.years = years;
+        this.year = year;
 
     }
 
-    boolean available = true;
 
-    public boolean isAvailable(){
-        return available;
+
+    public StatusEnum getStatusEnum() {
+        return statusEnum;
     }
 
-    public void lendToUser(User possessor){
-        this.possessor = possessor;
-        this.available = false;
-    }
-
-    public void setReturn(){
-        this.possessor = null;
-        this.available = true;
-    }
     public String getId() { return id; }
 
     public String getName() { return name; }
 
-    public int getYears() { return years; }
+    public int getYears() { return year; }
+
+    public void setStatusEnum(StatusEnum statusEnum) {
+        this.statusEnum = statusEnum;
+    }
 }
