@@ -22,12 +22,13 @@ public class BookTest { private Book book;
         assertEquals("TDD", bookTdd.getName());
         assertEquals("Kent", bookTdd.getAuthor());
         assertEquals(2005, bookTdd.getYears());
+        assertEquals("AVAILABLE", bookTdd.getStatusEnum().toString());
     }
 
     @Test
     public void shouldSeeTheAttributesOfABookSuccessfully(){
 
-        String expect = String.format("%20s %20s %20s %20d %20s", "1", "TDD", "Kent", 2005, "Free");
+        String expect = String.format("%20s %20s %20s %20d %20s", "1", "TDD", "Kent", 2005, "AVAILABLE");
         assertEquals(expect, bookTdd.toString());
     }
 
