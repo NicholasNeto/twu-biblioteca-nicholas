@@ -2,11 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f43993fa-cc0c-4002-b3fe-1774f3afaccf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/BibliotecaApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/LibraryOperations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/StatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Utilitaria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/client/BibliotecaApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/client/BibliotecaApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/models/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/models/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/models/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/models/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/models/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/models/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/services/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/services/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/services/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/services/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/services/StatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/util/Utilitaria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/util/Utilitaria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/AutenticadorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/ExampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/LibraryOperationsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/LibraryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MovieTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/UtilitarioTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/models/test/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/models/test/BookTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/models/test/MovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/models/test/MovieTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/models/test/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/models/test/UserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/models/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/models/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/services/test/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/services/test/LibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/services/Autheticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/services/Autheticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/services/IMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/services/IMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/services/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/services/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/services/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/services/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/util/Utilitaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/util/Utilitaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/services/test/AuthenticatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/services/test/AuthenticatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/services/test/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/services/test/LibraryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,7 +55,7 @@
     <SUITE FILE_PATH="coverage/biblioteca$com_twu_biblioteca_util_test_in_biblioteca.ic" NAME="com.twu.biblioteca.util.test in biblioteca Coverage Results" MODIFIED="1525948225305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.twu.biblioteca.util.test.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/biblioteca$com_twu_biblioteca_in_biblioteca.ic" NAME="com.twu.biblioteca in biblioteca Coverage Results" MODIFIED="1525948243693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/biblioteca$com_twu_biblioteca_in_biblioteca.ic" NAME="com.twu.biblioteca in biblioteca Coverage Results" MODIFIED="1526054943807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.twu.biblioteca.*</FILTER>
     </SUITE>
   </component>
@@ -34,11 +67,24 @@
       <file leaf-file-name="Library.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="48" column="133" lean-forward="true" selection-start-line="48" selection-start-column="133" selection-end-line="48" selection-end-column="133" />
+            <state relative-caret-position="-1203">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1636#1642#0" expanded="true" />
+                <element signature="e#1710#1717#0" expanded="true" />
+                <element signature="e#4352#4358#0" expanded="true" />
+                <element signature="e#4434#4441#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/Movie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="32" column="124" selection-start-line="32" selection-start-column="124" selection-end-line="32" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -46,95 +92,92 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="30">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding>
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+              <folding>
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Autheticator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/Autheticator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemsLibrary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/ItemsLibrary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="35" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="8" selection-end-column="35" />
+              <folding>
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/services/test/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="-930">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#shuldLendABookWithSuccessful#0;class#LibraryTest#0" />
-                <element signature="method#testUnsuccessfulBorrowBook#0;class#LibraryTest#0" />
-                <element signature="method#testSuccessfulReturnBook#0;class#LibraryTest#0" />
-                <element signature="method#shouldnotReturnBook#0;class#LibraryTest#0" />
-                <element signature="method#testSucessfulBorrowFilm#0;class#LibraryTest#0" />
+                <element signature="method#shouldNotLendABook#0;class#LibraryTest#0" />
+                <element signature="method#shouldReturnBookWithSuccessful#0;class#LibraryTest#0" />
+                <element signature="method#shuldLendAMovieWithSuccessful#0;class#LibraryTest#0" />
                 <element signature="method#shouldNotLendAMovie#0;class#LibraryTest#0" />
-                <element signature="method#testSuccessfulReturnFilm#0;class#LibraryTest#0" />
+                <element signature="method#shouldReturnMovieWithSuccessful#0;class#LibraryTest#0" />
                 <element signature="method#shouldNotReturnMovie#0;class#LibraryTest#0" />
-                <element signature="method#shouldShowManyBooks#1;class#LibraryTest#0" />
-                <element signature="e#3882#3888#0" expanded="true" />
-                <element signature="method#shouldShowATableOfBooks#1;class#LibraryTest#0" />
-                <element signature="method#shouldShowATableOfMovies#1;class#LibraryTest#0" />
+                <element signature="method#shouldShowATableOfBooks#0;class#LibraryTest#0" />
+                <element signature="method#shouldShowATableOfMovies#0;class#LibraryTest#0" />
+                <element signature="method#shouldNotHaveAnyPeopleLogged#0;class#LibraryTest#0" />
+                <element signature="method#shouldLoginInLibraryWithSuccessful#0;class#LibraryTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/StatusEnum.java">
+      <file leaf-file-name="BibliotecaApp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/client/BibliotecaApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/models/test/UserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="285">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilitarioTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/util/test/UtilitarioTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2115">
-              <caret line="141" column="17" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/models/test/BookTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,21 +186,20 @@
       <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="127" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="127" />
+            <state relative-caret-position="210">
+              <caret line="14" column="128" selection-start-line="14" selection-start-column="111" selection-end-line="14" selection-end-column="132" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/models/test/MovieTest.java">
+      <file leaf-file-name="Utilitaria.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/util/Utilitaria.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="-135">
+              <caret line="37" column="54" lean-forward="true" selection-start-line="36" selection-end-line="37" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#467#473#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,11 +210,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>filmList</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -204,26 +251,32 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/services/StatusEnum.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryOperationsTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/utilTest/UtilitarioTest.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/Book.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/Movie.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/User.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/util/test/UtilitarioTest.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/util/Utilitaria.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/client/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/StatusEnum.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/models/test/UserTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/models/test/BookTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/models/test/MovieTest.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/services/Library.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/User.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/services/test/AuthenticatorTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/services/IMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/services/Autheticator.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/Item.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/ItemsLibrary.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/models/Movie.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/util/Utilitaria.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/services/Library.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/services/test/LibraryTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/services/Menu.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/client/BibliotecaApp.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="width" value="1729" />
+    <option name="height" value="973" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -255,7 +308,28 @@
               <item name="TWU_Biblioteca-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="biblioteca" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TWU_Biblioteca-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="biblioteca" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TWU_Biblioteca-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="biblioteca" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TWU_Biblioteca-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="biblioteca" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="biblioteca" type="b2602c69:ProjectViewProjectNode" />
@@ -304,6 +378,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="item&#9;FILE&#9;file:///Users/nicols/Desktop/TWU_Biblioteca-master/src/com/twu/biblioteca/models/Item.java&#10;sta&#9;FILE&#9;file:///Users/nicols/Desktop/TWU_Biblioteca-master/src/com/twu/biblioteca/models/StatusEnum.java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -333,11 +408,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.shouldNotReturnMovie">
+  <component name="RunManager" selected="Application.BibliotecaApp">
+    <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.client.BibliotecaApp" />
+      <module name="biblioteca" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="LibraryTest.shouldNotLendAMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -349,7 +435,30 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.services.test" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.services.test.LibraryTest" />
-      <option name="METHOD_NAME" value="shouldNotLendAMovie" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="LibraryTest.shouldLoginInLibraryWithSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.services.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.services.test" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.services.test.LibraryTest" />
+      <option name="METHOD_NAME" value="shouldLoginInLibraryWithSuccessful" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -360,7 +469,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="LibraryTest.shouldNotReturnBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.shouldReallyBeTheInformedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -372,76 +481,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.services.test" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.services.test.LibraryTest" />
-      <option name="METHOD_NAME" value="shouldNotReturnBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="LibraryTest.shouldNotReturnMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.services.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.services.test" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.services.test.LibraryTest" />
-      <option name="METHOD_NAME" value="shouldNotReturnMovie" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="LibraryTest.shouldReturnMovieWithSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.services.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.services.test" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.services.test.LibraryTest" />
-      <option name="METHOD_NAME" value="shouldReturnMovieWithSuccessful" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="LibraryTest.shuldLendAMovieWithSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.services.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.services.test" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.services.test.LibraryTest" />
-      <option name="METHOD_NAME" value="shuldLendAMovieWithSuccessful" />
+      <option name="METHOD_NAME" value="shouldReallyBeTheInformedUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -459,6 +499,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="com.twu.biblioteca in biblioteca" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -491,19 +554,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.LibraryTest.shouldNotReturnBook" />
-      <item itemvalue="JUnit.LibraryTest.shuldLendAMovieWithSuccessful" />
-      <item itemvalue="JUnit.LibraryTest.shouldNotLendAMovie" />
-      <item itemvalue="JUnit.LibraryTest.shouldReturnMovieWithSuccessful" />
-      <item itemvalue="JUnit.LibraryTest.shouldNotReturnMovie" />
+      <item itemvalue="Application.BibliotecaApp" />
+      <item itemvalue="JUnit.LibraryTest.shouldLoginInLibraryWithSuccessful" />
+      <item itemvalue="JUnit.com.twu.biblioteca in biblioteca" />
+      <item itemvalue="JUnit.LibraryTest.shouldReallyBeTheInformedUser" />
+      <item itemvalue="JUnit.LibraryTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibraryTest.shouldNotReturnMovie" />
-        <item itemvalue="JUnit.LibraryTest.shouldReturnMovieWithSuccessful" />
-        <item itemvalue="JUnit.LibraryTest.shouldNotLendAMovie" />
-        <item itemvalue="JUnit.LibraryTest.shuldLendAMovieWithSuccessful" />
-        <item itemvalue="JUnit.LibraryTest.shouldNotReturnBook" />
+        <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.com.twu.biblioteca in biblioteca" />
+        <item itemvalue="JUnit.LibraryTest.shouldReallyBeTheInformedUser" />
+        <item itemvalue="JUnit.LibraryTest.shouldLoginInLibraryWithSuccessful" />
       </list>
     </recent_temporary>
   </component>
@@ -521,96 +584,104 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest_shouldNotLendAMovie - 2018.05.10 at 15h 45m 18s.xml">
-      <configuration name="LibraryTest.shouldNotLendAMovie" configurationId="JUnit" />
+    <history-entry file="LibraryTest_shouldLoginInLibraryWithSuccessful - 2018.05.11 at 12h 14m 20s.xml">
+      <configuration name="LibraryTest.shouldLoginInLibraryWithSuccessful" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_shouldReturnMovieWithSuccessful - 2018.05.10 at 15h 46m 06s.xml">
-      <configuration name="LibraryTest.shouldReturnMovieWithSuccessful" configurationId="JUnit" />
+    <history-entry file="LibraryTest_shouldLoginInLibraryWithSuccessful - 2018.05.11 at 12h 14m 48s.xml">
+      <configuration name="LibraryTest.shouldLoginInLibraryWithSuccessful" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_shouldNotReturnMovie - 2018.05.10 at 15h 47m 05s.xml">
-      <configuration name="LibraryTest.shouldNotReturnMovie" configurationId="JUnit" />
+    <history-entry file="LibraryTest_shouldLoginInLibraryWithSuccessful - 2018.05.11 at 12h 14m 55s.xml">
+      <configuration name="LibraryTest.shouldLoginInLibraryWithSuccessful" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest - 2018.05.10 at 15h 50m 35s.xml">
+    <history-entry file="LibraryTest_shouldLoginInLibraryWithSuccessful - 2018.05.11 at 12h 15m 12s.xml">
+      <configuration name="LibraryTest.shouldLoginInLibraryWithSuccessful" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_twu_biblioteca_in_biblioteca - 2018.05.11 at 12h 26m 16s.xml">
+      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_shouldLoginInLibraryWithSuccessful - 2018.05.11 at 12h 35m 26s.xml">
+      <configuration name="LibraryTest.shouldLoginInLibraryWithSuccessful" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_shouldLoginInLibraryWithSuccessful - 2018.05.11 at 12h 45m 27s.xml">
+      <configuration name="LibraryTest.shouldLoginInLibraryWithSuccessful" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest - 2018.05.11 at 13h 08m 54s.xml">
       <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_shouldNotReturnBook - 2018.05.10 at 15h 54m 22s.xml">
-      <configuration name="LibraryTest.shouldNotReturnBook" configurationId="JUnit" />
+    <history-entry file="com_twu_biblioteca_in_biblioteca - 2018.05.11 at 13h 09m 04s.xml">
+      <configuration name="com.twu.biblioteca in biblioteca" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_shouldNotLendAMovie - 2018.05.10 at 15h 57m 05s.xml">
-      <configuration name="LibraryTest.shouldNotLendAMovie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_shouldNotLendAMovie - 2018.05.10 at 15h 57m 13s.xml">
-      <configuration name="LibraryTest.shouldNotLendAMovie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_shouldReturnMovieWithSuccessful - 2018.05.10 at 15h 58m 03s.xml">
-      <configuration name="LibraryTest.shouldReturnMovieWithSuccessful" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_shouldReturnMovieWithSuccessful - 2018.05.10 at 15h 58m 23s.xml">
-      <configuration name="LibraryTest.shouldReturnMovieWithSuccessful" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_shouldNotReturnMovie - 2018.05.10 at 15h 58m 37s.xml">
-      <configuration name="LibraryTest.shouldNotReturnMovie" configurationId="JUnit" />
+    <history-entry file="LibraryTest - 2018.05.11 at 16h 56m 13s.xml">
+      <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.3281471" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.33295712" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.2970297" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.6407355" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.40452617" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32956153" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3197425" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.6393211" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49892932" weight="0.24821173" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49892932" weight="0.25839105" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3261851" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.46958983" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.46613994" />
       <window_info id="Favorites" order="3" sideWeight="0.5010707" side_tool="true" weight="0.2446352" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.18097281" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3281471" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3281471" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.18097281" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.2970297" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.40519187" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49892932" weight="0.24821173" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49892932" weight="0.25839105" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32956153" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.46958983" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3261851" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.46613994" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.6407355" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.6393211" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32956153" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.3281471" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.33295712" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3197425" />
       <window_info id="Favorites" order="3" sideWeight="0.5010707" side_tool="true" weight="0.2446352" />
     </layout-to-restore>
   </component>
@@ -619,11 +690,41 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="60" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>itemsLibrary.getBookList()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.getStatusEnum()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>item.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>item.getStatusEnum()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>item.isAvailable()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>library.isLogged()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>book</expression-string>
         <language-id>JAVA</language-id>
@@ -643,6 +744,10 @@
           <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1636#1642#0" expanded="true" />
+            <element signature="e#1710#1717#0" expanded="true" />
+            <element signature="e#4352#4358#0" expanded="true" />
+            <element signature="e#4434#4441#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,17 +759,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#shuldLendABookWithSuccessful#0;class#LibraryTest#0" />
-            <element signature="method#testUnsuccessfulBorrowBook#0;class#LibraryTest#0" />
-            <element signature="method#testSuccessfulReturnBook#0;class#LibraryTest#0" />
-            <element signature="method#shouldnotReturnBook#0;class#LibraryTest#0" />
-            <element signature="method#testSucessfulBorrowFilm#0;class#LibraryTest#0" />
+            <element signature="method#shouldNotLendABook#0;class#LibraryTest#0" />
+            <element signature="method#shouldReturnBookWithSuccessful#0;class#LibraryTest#0" />
+            <element signature="method#shuldLendAMovieWithSuccessful#0;class#LibraryTest#0" />
             <element signature="method#shouldNotLendAMovie#0;class#LibraryTest#0" />
-            <element signature="method#testSuccessfulReturnFilm#0;class#LibraryTest#0" />
+            <element signature="method#shouldReturnMovieWithSuccessful#0;class#LibraryTest#0" />
             <element signature="method#shouldNotReturnMovie#0;class#LibraryTest#0" />
-            <element signature="method#shouldShowManyBooks#1;class#LibraryTest#0" />
-            <element signature="e#3882#3888#0" expanded="true" />
-            <element signature="method#shouldShowATableOfBooks#1;class#LibraryTest#0" />
-            <element signature="method#shouldShowATableOfMovies#1;class#LibraryTest#0" />
+            <element signature="method#shouldShowATableOfBooks#0;class#LibraryTest#0" />
+            <element signature="method#shouldShowATableOfMovies#0;class#LibraryTest#0" />
+            <element signature="method#shouldNotHaveAnyPeopleLogged#0;class#LibraryTest#0" />
+            <element signature="method#shouldLoginInLibraryWithSuccessful#0;class#LibraryTest#0" />
           </folding>
         </state>
       </provider>
@@ -675,8 +779,6 @@
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="17" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -697,8 +799,6 @@
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -719,6 +819,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -753,13 +859,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/deaoItem.java" />
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Emprestador.java" />
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Autenticador.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-516">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/AutenticadorTest.java" />
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
@@ -784,68 +883,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/util/Utilitaria.java">
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/models/test/MovieTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/client/BibliotecaApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/StatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="127" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/models/test/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -860,65 +905,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/models/test/MovieTest.java">
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/models/test/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="375">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/IMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/services/test/AuthenticatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/models/test/BookTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/Library.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="48" column="133" lean-forward="true" selection-start-line="48" selection-start-column="133" selection-end-line="48" selection-end-column="133" />
+        <state relative-caret-position="287">
+          <caret line="431" column="13" selection-start-line="431" selection-start-column="13" selection-end-line="431" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/StatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/ItemsLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding>
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="128" selection-start-line="14" selection-start-column="111" selection-end-line="14" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/models/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="32" column="124" selection-start-line="32" selection-start-column="124" selection-end-line="32" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/util/Utilitaria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="37" column="54" lean-forward="true" selection-start-line="36" selection-end-line="37" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#467#473#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/services/test/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="-930">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#shuldLendABookWithSuccessful#0;class#LibraryTest#0" />
-            <element signature="method#testUnsuccessfulBorrowBook#0;class#LibraryTest#0" />
-            <element signature="method#testSuccessfulReturnBook#0;class#LibraryTest#0" />
-            <element signature="method#shouldnotReturnBook#0;class#LibraryTest#0" />
-            <element signature="method#testSucessfulBorrowFilm#0;class#LibraryTest#0" />
+            <element signature="method#shouldNotLendABook#0;class#LibraryTest#0" />
+            <element signature="method#shouldReturnBookWithSuccessful#0;class#LibraryTest#0" />
+            <element signature="method#shuldLendAMovieWithSuccessful#0;class#LibraryTest#0" />
             <element signature="method#shouldNotLendAMovie#0;class#LibraryTest#0" />
-            <element signature="method#testSuccessfulReturnFilm#0;class#LibraryTest#0" />
+            <element signature="method#shouldReturnMovieWithSuccessful#0;class#LibraryTest#0" />
             <element signature="method#shouldNotReturnMovie#0;class#LibraryTest#0" />
-            <element signature="method#shouldShowManyBooks#1;class#LibraryTest#0" />
-            <element signature="e#3882#3888#0" expanded="true" />
-            <element signature="method#shouldShowATableOfBooks#1;class#LibraryTest#0" />
-            <element signature="method#shouldShowATableOfMovies#1;class#LibraryTest#0" />
+            <element signature="method#shouldShowATableOfBooks#0;class#LibraryTest#0" />
+            <element signature="method#shouldShowATableOfMovies#0;class#LibraryTest#0" />
+            <element signature="method#shouldNotHaveAnyPeopleLogged#0;class#LibraryTest#0" />
+            <element signature="method#shouldLoginInLibraryWithSuccessful#0;class#LibraryTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/Autheticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1203">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1636#1642#0" expanded="true" />
+            <element signature="e#1710#1717#0" expanded="true" />
+            <element signature="e#4352#4358#0" expanded="true" />
+            <element signature="e#4434#4441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/services/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/client/BibliotecaApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
