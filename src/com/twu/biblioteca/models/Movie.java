@@ -5,13 +5,6 @@ public class Movie extends Item {
     public int rate;
 
 
-
-    public Movie(String id, String name, String director, int years, int rate ) {
-        super(id, name, years);
-        this.director = director;
-        this.setStatusEnum(StatusEnum.AVAILABLE);
-    }
-
     public Movie(String id, String name, String director, int years) {
         super(id, name, years);
         this.director = director;
@@ -24,12 +17,6 @@ public class Movie extends Item {
 
     @Override
     public String toString() {
-        String possessorName;
-        if (this.possessor != null) {
-            possessorName = this.possessor.getName();
-        } else {
-            possessorName = "Free";
-        }
         return String.format("%20s %20s %20s %20d %20s", this.getId(), this.getName(), this.getDirector(), this.getYears(), this.getStatusEnum());
     }
 
