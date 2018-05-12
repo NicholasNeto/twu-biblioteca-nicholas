@@ -48,73 +48,130 @@ public class Library {
         return representation;
     }
 
-    public String borrowLibraryFilm(String id) {
 
-        for (Movie film : this.filmList) {
-            if (id.equals(film.getId())) {
-                film.lendToUser(this.user);
-                return "Thank you! Enjoy the film";
+
+
+    public ItemsLibrary getItemLibraryAvaible() {
+        ArrayList<Book> listBookAvaible = new ArrayList<Book>();
+        ArrayList<Movie> listMovieAvaible = new ArrayList<Movie>();
+
+        for(Item item :itemList){
+            if(item instanceof Book){
+                if(item.getStatusEnum() == StatusEnum.AVAILABLE){
+                    listBookAvaible.add((Book) item);
+                }
+            }else if(item instanceof Movie){
+                if(item.getStatusEnum() == StatusEnum.AVAILABLE){
+                    listMovieAvaible.add((Movie) item);
+                }
             }
         }
-        return "This film is not available";
+
+        return new ItemsLibrary(listBookAvaible, listMovieAvaible);
     }
 
-    public String borrowLibraryBook(String id) {
-        for (Book book : this.bookList) {
-            if (id.equals(book.getId())) {
-                book.lendToUser(this.user);
-                return "Thank you! Enjoy the book";
+
+
+    public String borrowLibraryMedia(String id) {
+        for(Item item :itemList){
+            if(item.getId().equals(id)){
+                if(item instanceof Book){
+                    item.setStatusEnum(StatusEnum.UNAVAILABLE);
+                    item.toString();
+                    return "Thank you! Enjoy the book";
+                }else if(item instanceof Movie){
+                    item.setStatusEnum(StatusEnum.UNAVAILABLE);
+                    return "Thank you! Enjoy the movie";
+                }
             }
         }
         return "This book is not available";
     }
 
-    public String returnFilmToTheLibrary(String id) {
-        for (Movie film : this.filmList) {
-            if (id.equals(film.getId())) {
-                film.setReturn();
-                return "Thank you for returning the film";
+    public String returMediaToTheLibrary(String id) {
+        for(Item item :itemList){
+            if(item.getId().equals(id)){
+                if(item instanceof Book){
+//                    book.lendToUser(this.user);
+                    item.setStatusEnum(StatusEnum.AVAILABLE);
+                    return "Thank you for returning the Book";
+                }else if(item instanceof Movie){
+                    item.setStatusEnum(StatusEnum.AVAILABLE);
+                    return "Thank you for returning the Movie";
+                }
             }
         }
-        return "This is not a valid film to return";
+        return "This is not a valid Media to return";
     }
 
-    public String returnBookToTheLibrary(String id) {
 
-        for (Item book : this.bookList) {
-            if (id.equals(book.getId())) {
-                book.setReturn();
-                return "Thank you for returning the book";
+
+//    public String showUnavailableFilm() {
+//        ArrayList<Movie> borrowedFilms = new ArrayList<Movie>();
+//        for (Movie film : filmList) {
+//            if (!film.isAvailable()) {
+//                borrowedFilms.add(film);
+//            }
+//        }
+//
+//
+//        return showMediaInTable(borrowedFilms);
+//    }
+//
+//    public String showUnavailableBook() {
+//        ArrayList<Book> borrowedBooks = new ArrayList<Book>();
+//        for (Book book : bookList) {
+//            if (!book.isAvailable()) {
+//                borrowedBooks.add(book);
+//            }
+//        }
+//        return showMediaInTable(borrowedBooks);
+//    }
+
+    public ItemsLibrary getItemsUnavailable(){
+        ArrayList<Book> bookUnavailableList = new ArrayList<Book>();
+        ArrayList<Movie> movieUnavailableList = new ArrayList<Movie>();
+        for (Item item: itemList) {
+            if(item instanceof Book){
+                if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
+                    bookUnavailableList.add((Book) item);
+                }
+            } else if(item instanceof Movie){
+                if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
+                    movieUnavailableList.add((Movie) item);
+                }
             }
         }
-        return "This is not a valid book to return";
+
+        ItemsLibrary itemsLibrary = new ItemsLibrary();
+        itemsLibrary.setBookList(bookUnavailableList);
+        itemsLibrary.setMovieList(movieUnavailableList);
+
+        return itemsLibrary;
     }
 
-    public String showUnavailableFilm() {
-        ArrayList<Movie> borrowedFilms = new ArrayList<Movie>();
-        for (Movie film : filmList) {
-            if (!film.isAvailable()) {
-                borrowedFilms.add(film);
-            }
-        }
-        return showMediaInTable(borrowedFilms);
-    }
 
-    public String showUnavailableBook() {
-        ArrayList<Book> borrowedBooks = new ArrayList<Book>();
-        for (Book book : bookList) {
-            if (!book.isAvailable()) {
-                borrowedBooks.add(book);
-            }
-        }
-        return showMediaInTable(borrowedBooks);
-    }
+//    public StatusEnum showItemAvailability(Item item) {
+//
+//        //Instance of, fazer o mesmo para o movie
+//
+//        if(item instanceof Book ){
+//            Book book = (Book) item;
+//            return bookList.get(bookList.indexOf(book)).getStatusEnum();
+//        } else if (item instanceof Movie) {
+//            Movie movie = (Movie) item;
+//            return filmList.get(filmList.indexOf(movie)).getStatusEnum();
+//        } else {
+//            return StatusEnum.UNAVAILABLE;
+//        }
+//
+//    }
 
-    public void setBookList(ArrayList<Book> bookList) {
-        this.bookList = bookList;
-    }
-
-    public void setFilmList(ArrayList<Movie> filmList) {
-        this.filmList = filmList;
-    }
+//    public void setBookList(ArrayList<Book> bookList) {
+//        this.bookList = bookList;
+//    }
+//
+//    public void setFilmList(ArrayList<Movie> filmList) {
+//        this.filmList = filmList;
+//    }
 }
