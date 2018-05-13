@@ -38,19 +38,19 @@ public class User {
         this.logged = logged;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-
-        User user = (User) obj;
-
-        if(user.getIdUser().equals( this.idUser)
-                && user.getName().equals(this.name)
-                && user.getEmail().equals(this.email)
-                && user.getPhone() == this.phone
-                && user.getPassword().equals(this.password))
-        {
-            return true;
-        }
-            return false;
-    }
+//    @Override
+//    public boolean equals(Object obj) {
+//
+//        User user = (User) obj;
+//
+//        if(user.getIdUser().equals( this.idUser)
+//                && user.getName().equals(this.name)
+//                && user.getEmail().equals(this.email)
+//                && user.getPhone() == this.phone
+//                && user.getPassword().equals(this.password))
+//        {
+//            return true;
+//        }
+//            return false;
+//    }
 }
