@@ -15,7 +15,7 @@ public class Menu {
     }
 
     public void showWelcome(){
-        System.out.println("\tWELCOME");
+        System.out.println("\tWelcome Bangalore Public Library");
     }
 
     public User login(){
@@ -57,7 +57,7 @@ public class Menu {
                     Scanner scannerInputBook = new Scanner(System.in);
                     int inputBook = scannerInputBook.nextInt();
                     String inputStringBook= String.valueOf(inputBook);
-                    library.borrowLibraryMedia(inputStringBook);
+                    System.out.println(library.borrowLibraryMedia(inputStringBook));;
                     break;
 
                 case 3:
@@ -65,7 +65,7 @@ public class Menu {
                     Scanner scannerReturnBook = new Scanner(System.in);
                     int inputReturnBook = scannerReturnBook.nextInt();
                     String inputReturnStringBook = String.valueOf(inputReturnBook);
-                    library.returMediaToTheLibrary(inputReturnStringBook);
+                    System.out.println(library.returMediaToTheLibrary(inputReturnStringBook));;
                     break;
 
                 case 4:
@@ -82,7 +82,7 @@ public class Menu {
                     Scanner scannerInputFilm = new Scanner(System.in);
                     int inputFilm = scannerInputFilm.nextInt();
                     String inputStringFilm= String.valueOf(inputFilm);
-                    library.borrowLibraryMedia(inputStringFilm);
+                    System.out.println(library.borrowLibraryMedia(inputStringFilm));
                     break;
 
                 case 7:
@@ -90,7 +90,7 @@ public class Menu {
                     Scanner scannerReturnFilm = new Scanner(System.in);
                     int inputReturnFilm = scannerReturnFilm.nextInt();
                     String inputReturnStringFilm = String.valueOf(inputReturnFilm);
-                    library.returMediaToTheLibrary(inputReturnStringFilm);
+                    System.out.println(library.returMediaToTheLibrary(inputReturnStringFilm));;
                     break;
 
                 case 8:
@@ -107,5 +107,4 @@ public class Menu {
             }
         }
     }
-
 }
