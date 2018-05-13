@@ -17,20 +17,6 @@ public class Book extends Item {
 
     public String getAuthor() { return author; }
 
-
-    @Override
-    public boolean equals(Object obj) {
-
-         Book book = (Book) obj;
-         if(book.getId().equals( this.getId())
-                 && book.getName().equals(this.getName())
-                 && book.getAuthor().equals(this.getAuthor())
-                 && book.getYears() == getYears())
-         {
-                return true;
-         }
-            return false;
-    }
 }
 
 
