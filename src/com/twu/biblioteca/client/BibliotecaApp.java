@@ -16,6 +16,7 @@ public class BibliotecaApp {
         Library library = new Library(user);
         menuItens.printMenuItens(user);
 
+
         Scanner scanner = new Scanner(System.in);
         int input = scanner.nextInt();
 
