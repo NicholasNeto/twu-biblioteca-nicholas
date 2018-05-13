@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class Library {
 
 
+
     private ArrayList<Item> itemsList;
     private ArrayList<User> userList;
 
@@ -17,9 +18,7 @@ public class Library {
 
         Utilitaria util = new Utilitaria();
         itemsList = util.createItemsList();
-
         userList = util.createListUserAndPassword();
-        //this.user = user;
 
     }
 
@@ -128,6 +127,27 @@ public class Library {
 
 
 
+//    public String showUnavailableFilm() {
+//        ArrayList<Movie> borrowedFilms = new ArrayList<Movie>();
+//        for (Movie film : filmList) {
+//            if (!film.isAvailable()) {
+//                borrowedFilms.add(film);
+//            }
+//        }
+//
+//
+//        return showMediaInTable(borrowedFilms);
+//    }
+//
+//    public String showUnavailableBook() {
+//        ArrayList<Book> borrowedBooks = new ArrayList<Book>();
+//        for (Book book : bookList) {
+//            if (!book.isAvailable()) {
+//                borrowedBooks.add(book);
+//            }
+//        }
+//        return showMediaInTable(borrowedBooks);
+//    }
 
     public ItemsLibrary getItemsUnavailable(){
         ArrayList<Book> bookUnavailableList = new ArrayList<Book>();
