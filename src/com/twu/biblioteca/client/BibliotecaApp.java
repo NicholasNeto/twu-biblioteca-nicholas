@@ -11,7 +11,7 @@ public class BibliotecaApp {
     public static void main(String[] args) {
 
         Menu menuItens = new Menu();
-        menuItens.showWelcome();
+        System.out.println(menuItens.showWelcome());
         User user =  menuItens.login();
         Library library = new Library(user);
         menuItens.printMenuItens(user);
