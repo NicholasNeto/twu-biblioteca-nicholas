@@ -1,10 +1,10 @@
 package com.twu.biblioteca.services;
 
 
-import com.twu.biblioteca.models.ItemsLibrary;
-import com.twu.biblioteca.models.StatusEnum;
-import com.twu.biblioteca.models.User;
+import com.twu.biblioteca.models.*;
 import com.twu.biblioteca.util.ScannerUtil;
+
+import java.util.ArrayList;
 
 public class Menu {
 
@@ -42,7 +42,7 @@ public class Menu {
 
             switch (option) {
                 case 1:
-                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE).getBookList());
+                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE, Book.class));
                     System.out.println(result);
                     return result;
 
@@ -62,13 +62,13 @@ public class Menu {
                     return result;
 
                 case 4:
-                    itemsLibrary = library.getItemsByStatus(StatusEnum.UNAVAILABLE);
-                    result = library.showMediaInTable(itemsLibrary.getBookList());
+//                    ArrayList<Item> listItemUnavailable = ;
+                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE, Book.class));
                     System.out.println(result);
                     return result;
 
                 case 5:
-                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE).getMovieList());
+                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE, Movie.class));
                     System.out.println(result);
                     return result;
 
@@ -87,7 +87,7 @@ public class Menu {
                     return result;
 
                 case 8:
-                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE).getMovieList());
+                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE, Movie.class));
                     System.out.println(result);
                     return result;
 

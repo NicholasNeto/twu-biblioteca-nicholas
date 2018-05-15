@@ -95,34 +95,33 @@ public class Library {
         return message;
     }
 
-    public ArrayList<Item> getItemsByStatus(StatusEnum statusEnum, Book){
 
+    public <T> ArrayList<Item > getItemsByStatus(StatusEnum statusEnum, Class<T> clazz ){
         ArrayList<Item> listItem = new  ArrayList<Item>();
 
         for (Item item: itemsList) {
-            if(item.getStatusEnum().equals(statusEnum)) {
-                auxiliarMetodo(Book, item)
 
+            if(item.getStatusEnum().equals(statusEnum)) {
+                Item especificItem = (Item ) auxiliarMetodo(clazz, item);
+                if(especificItem != null){
+                    listItem.add(especificItem);
+                }
 
             }
         }
-
         return listItem;
+
     }
 
+    public <T> T auxiliarMetodo(Class<T> clazz, Item item){
 
+        T item2 = null;
 
+        if(item.getClass().equals(clazz)){
+            item2 = (T) item;
+        }
 
-    public Item auxiliarMetodo(Item tipoDesejado, Item  ){
-
-        Item  = (tipoDesejado) item;
-
-
-       return item
+        return item2;
     }
-
-
-
-
 
 }

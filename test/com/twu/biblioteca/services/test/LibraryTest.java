@@ -1,6 +1,7 @@
 package com.twu.biblioteca.services.test;
 
 import com.twu.biblioteca.models.*;
+import com.twu.biblioteca.models.test.MovieTest;
 import com.twu.biblioteca.services.Library;
 import com.twu.biblioteca.util.Utilitaria;
 import org.junit.Before;
@@ -86,7 +87,7 @@ public class LibraryTest {
     public void shouldNotLendAMovie() {
 
         library.borrowLibraryMedia("5");
-        assertEquals("That movie  is not available.", library.borrowLibraryMedia("5"));
+        assertEquals("That movie is not available.", library.borrowLibraryMedia("5"));
     }
 
     @Test
@@ -129,7 +130,7 @@ public class LibraryTest {
     public void shouldShowATableOfBooks() {
 
 
-        ArrayList<Item> listItem = library.getItemsByStatus(StatusEnum.AVAILABLE);
+        ArrayList<Item> listItemAvailable  = library.getItemsByStatus(StatusEnum.AVAILABLE, Book.class);
 
         String listaDesejadaDeBokk =  String.format("%20s %20s %20s %20s %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
@@ -142,14 +143,14 @@ public class LibraryTest {
                 "3",  "Harry Potter", "Kent", 2002, "AVAILABLE",
                 "4", "The Lord of the Rings", "Peter Jackson", 2003, "AVAILABLE");
 
-        assertEquals( listaDesejadaDeBokk, library.showMediaInTable(listItem));
+        assertEquals( listaDesejadaDeBokk, library.showMediaInTable(listItemAvailable));
 
     }
 
     @Test
     public void shouldShowATableOfMovies() {
 
-        ItemsLibrary a = library.getItemsByStatus(StatusEnum.AVAILABLE);
+        ArrayList<Item> listItemAvailable = library.getItemsByStatus(StatusEnum.AVAILABLE, Movie.class);
 
        String listaDesejadaDeMovie =  String.format("%20s %20s %20s %20s %20s\n"
                        + "%20s %20s %20s %20d %20s\n"
@@ -163,7 +164,7 @@ public class LibraryTest {
                 "8", "The Matrix", "Cara Incrivel", 2003, "AVAILABLE");
 
 
-        assertEquals( listaDesejadaDeMovie, library.showMediaInTable(a.getMovieList()));
+        assertEquals( listaDesejadaDeMovie, library.showMediaInTable((ArrayList<? extends Item>) listItemAvailable));
 
 
 
@@ -176,9 +177,9 @@ public class LibraryTest {
                 "ID", "Name", "Authors", "Years", "Status", "1", "TDD", "Kent", 2000, "UNAVAILABLE");
 
         library.borrowLibraryMedia("1");
-        ItemsLibrary itemsLibrary = library.getItemsByStatus(StatusEnum.UNAVAILABLE);
+        ArrayList<Item> listItemUnavailable = library.getItemsByStatus(StatusEnum.UNAVAILABLE, Book.class);
 
-        assertEquals(expectBooksUnavailableList, library.showMediaInTable(itemsLibrary.getBookList()));
+        assertEquals(expectBooksUnavailableList, library.showMediaInTable(listItemUnavailable));
     }
 
     @Test
@@ -188,9 +189,9 @@ public class LibraryTest {
                 "ID", "Name", "Authors", "Years", "Status", "5", "A luz", "Nicholas", 2000, "UNAVAILABLE");
 
         library.borrowLibraryMedia("5");
-        ItemsLibrary itemsLibrary = library.getItemsByStatus(StatusEnum.UNAVAILABLE);
+        ArrayList<Item> listItemUnavailable = library.getItemsByStatus(StatusEnum.UNAVAILABLE, Movie.class);
 
-        assertEquals(expectMoviesUnavailableList, library.showMediaInTable(itemsLibrary.getMovieList()));
+        assertEquals(expectMoviesUnavailableList, library.showMediaInTable(listItemUnavailable));
     }
 
 }

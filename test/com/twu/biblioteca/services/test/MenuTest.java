@@ -236,7 +236,7 @@ public class MenuTest {
     public void shouldLenMoviedWithFail(){
         //Given
 
-        String failMsg = "That movie  is not available.";
+        String failMsg = "That movie is not available.";
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
