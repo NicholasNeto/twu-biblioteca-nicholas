@@ -9,9 +9,6 @@ public class ItemsLibrary {
         this.movieList = movieList;
     }
 
-    public ItemsLibrary() {
-    }
-
     private ArrayList<Book> bookList;
     private ArrayList<Movie> movieList;
 
@@ -19,15 +16,9 @@ public class ItemsLibrary {
         return bookList;
     }
 
-    public void setBookList(ArrayList<Book> bookList) {
-        this.bookList = bookList;
-    }
-
     public ArrayList<Movie> getMovieList() {
         return movieList;
     }
 
-    public void setMovieList(ArrayList<Movie> movieList) {
-        this.movieList = movieList;
-    }
+
 }

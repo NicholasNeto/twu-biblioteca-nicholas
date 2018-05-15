@@ -10,8 +10,6 @@ import java.util.ArrayList;
 public class Utilitaria {
 
     public Utilitaria() {
-        createItemsList();
-        createListUserAndPassword();
 
     }
 
@@ -36,7 +34,7 @@ public class Utilitaria {
 
         ArrayList<User> users = new ArrayList<User>();
 
-        users.add(new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1313"));
+        users.add(new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1"));
         users.add(new User("12", "Thalyta", "Thalyta@gmail.com", 9899999, "12"));
         users.add(new User("123", "Erica", "Erica@gmail.com", 123456789, "123"));
         users.add(new User("1234", "Katia", "Katia@gmail.com", 123456789, "1234"));

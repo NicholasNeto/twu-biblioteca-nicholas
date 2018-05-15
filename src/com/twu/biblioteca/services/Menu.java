@@ -1,110 +1,122 @@
 package com.twu.biblioteca.services;
 
-import com.twu.biblioteca.models.ItemsLibrary;
-import com.twu.biblioteca.models.User;
-import com.twu.biblioteca.services.Library;
 
-import java.util.Scanner;
+import com.twu.biblioteca.models.ItemsLibrary;
+import com.twu.biblioteca.models.StatusEnum;
+import com.twu.biblioteca.models.User;
+import com.twu.biblioteca.util.ScannerUtil;
 
 public class Menu {
 
-    Autheticator autheticator;
+    Authenticator Authenticator;
 
     public Menu() {
-        autheticator = new Autheticator();
+        Authenticator = new Authenticator();
     }
 
-    public void showWelcome(){
-        System.out.println("\tWelcome Bangalore Public Library");
+    public String  showWelcome(){
+        return "\tWelcome Bangalore Public Library";
     }
 
-    public User login(){
-        Scanner scanner = new Scanner(System.in);
+    public  User login(ScannerUtil scannerUtil){
+
         System.out.print("Login:");
-        String idUser = scanner.nextLine();
+        String idUser = scannerUtil.readKeyBoardThenReturnString();
 
         System.out.print("Password:");
-        String password = scanner.nextLine();
+        String password = scannerUtil.readKeyBoardThenReturnString();
 
-        return autheticator.login(idUser, password);
+        return Authenticator.login(idUser, password);
     }
 
-    public void printMenuItens(User user) {
-        if(user.isLogged()){
-            System.out.println("\t Menu ");
-            System.out.println("Select: \n"
-                    + "(1) to browse books" + " - " + "(2) Lend Book" + " - " +  "(3) Return Book" + " - " + "(4) Show books unavailable \n"
-                    + "(5) to browse films" + " - " + "(6) Lend film" + " - " +  "(7) Return Film" + " - " + "(8) Show films unavailable \n"
-                    + "(0) to exit. \n");
-            System.out.println("Option:");
-        } else {
-            System.out.println("No menu option avalable");
-        }
-    }
 
-    public void showOption(int input, Library library){
+
+    public String showOption(int input, Library library, ScannerUtil scannerUtil){
         if (input >= 0) {
             int option;
             option = input;
             ItemsLibrary itemsLibrary;
+            MenuImpl menuImpl = new MenuImpl();
+            String result = "";
+
+
             switch (option) {
                 case 1:
-                    System.out.println(library.showMediaInTable(library.getItemLibraryAvaible().getBookList()));
-                    break;
+                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE).getBookList());
+                    System.out.println(result);
+                    return result;
 
                 case 2:
                     System.out.println("Print the ID number of the book you want to borrow");
-                    Scanner scannerInputBook = new Scanner(System.in);
-                    int inputBook = scannerInputBook.nextInt();
-                    String inputStringBook= String.valueOf(inputBook);
-                    System.out.println(library.borrowLibraryMedia(inputStringBook));;
-                    break;
+                    String optionsChosenToBook = scannerUtil.readKeyBoardThenReturnString();
+                    result = library.borrowLibraryMedia(optionsChosenToBook);
+                           // lendBook(library, optionsChosenToBook);
+                    System.out.println(result);
+                    return  result;
 
                 case 3:
                     System.out.println("Print the ID number of the book you want to return");
-                    Scanner scannerReturnBook = new Scanner(System.in);
-                    int inputReturnBook = scannerReturnBook.nextInt();
-                    String inputReturnStringBook = String.valueOf(inputReturnBook);
-                    System.out.println(library.returMediaToTheLibrary(inputReturnStringBook));;
-                    break;
+                    String  optionsChosenToRetunrMovie = scannerUtil.readKeyBoardThenReturnString();
+                    result = library.returnMediaToTheLibrary(optionsChosenToRetunrMovie);
+                    System.out.println(result);
+                    return result;
 
                 case 4:
-                    itemsLibrary = library.getItemsUnavailable();
-                    System.out.println(library.showMediaInTable(itemsLibrary.getBookList()));
-                    break;
+                    itemsLibrary = library.getItemsByStatus(StatusEnum.UNAVAILABLE);
+                    result = library.showMediaInTable(itemsLibrary.getBookList());
+                    System.out.println(result);
+                    return result;
 
                 case 5:
-                    System.out.println(library.showMediaInTable(library.getItemLibraryAvaible().getMovieList()));
-                    break;
+                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE).getMovieList());
+                    System.out.println(result);
+                    return result;
 
                 case 6:
                     System.out.println("Print the ID number of the film you want to borrow");
-                    Scanner scannerInputFilm = new Scanner(System.in);
-                    int inputFilm = scannerInputFilm.nextInt();
-                    String inputStringFilm= String.valueOf(inputFilm);
-                    System.out.println(library.borrowLibraryMedia(inputStringFilm));
-                    break;
+                    String  optionsChosenToMovie = scannerUtil.readKeyBoardThenReturnString();
+                    result = library.borrowLibraryMedia(optionsChosenToMovie);
+                    System.out.println(result);
+                    return result;
 
                 case 7:
                     System.out.println("Print the ID number of the film you want to return");
-                    Scanner scannerReturnFilm = new Scanner(System.in);
-                    int inputReturnFilm = scannerReturnFilm.nextInt();
-                    String inputReturnStringFilm = String.valueOf(inputReturnFilm);
-                    System.out.println(library.returMediaToTheLibrary(inputReturnStringFilm));;
-                    break;
+                    String  optionsChosenToReturnMovie = scannerUtil.readKeyBoardThenReturnString();
+                    result = library.returnMediaToTheLibrary(optionsChosenToReturnMovie);
+                    System.out.println(result);
+                    return result;
 
                 case 8:
-                    itemsLibrary = library.getItemsUnavailable();
-                    System.out.println(library.showMediaInTable(itemsLibrary.getMovieList()));
-                    break;
+                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE).getMovieList());
+                    System.out.println(result);
+                    return result;
 
                 case 0:
-                    System.out.println("See you  later!");
-                    break;
+                    result = "See you  later!";
+                    System.out.println(result);
+                    return result;
 
                 default:
-                    System.out.println("Select a valid option!");
+                    result = "Select a valid option!";
+                    System.out.println(result);
+                    return result;
             }
         }
+        return "Invalid Option";
+    }
+
+    public String getOptionsMenu() {
+        return "\t Menu "
+                + "Select: \n"
+                + "(1) to browse books" + " - " + "(2) Lend Book" + " - " +  "(3) Return Book" + " - " + "(4) Show books unavailable \n"
+                + "(5) to browse films" + " - " + "(6) Lend film" + " - " +  "(7) Return Film" + " - " + "(8) Show films unavailable \n"
+                + "(0) to exit. \n"
+                + "Option:";
+    }
+
+    public String getNoOpitionsMenu() {
+        return "No menu option avalable";
     }
 }
+
+

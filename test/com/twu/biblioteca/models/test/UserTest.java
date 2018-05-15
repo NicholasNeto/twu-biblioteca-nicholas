@@ -34,7 +34,6 @@ public class UserTest {
         assertFalse(userNicholas.isLogged());
     }
 
-
     @Test
     public void shouldBeLoggedIn() {
 

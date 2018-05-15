@@ -38,15 +38,15 @@ public class UtilitarioTest {
         assertEquals("Nicholas", usersList.get(0).getName());
         assertEquals("Nicholas@gmail.com", usersList.get(0).getEmail());
         assertEquals(123456789, usersList.get(0).getPhone());
-        assertEquals("1313", usersList.get(0).getPassword());
+        assertEquals("1", usersList.get(0).getPassword());
     }
 
     @Test
-    public void checkListAttributesToUsersWithSomeIndex() {
+    public void checkListAttributesToUsersWithAllIndexSuccess() {
 
         ArrayList<User> users = new ArrayList<User>();
 
-        users.add(new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1313"));
+        users.add(new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1"));
         users.add(new User("12", "Thalyta", "Thalyta@gmail.com", 9899999, "12"));
         users.add(new User("123", "Erica", "Erica@gmail.com", 123456789, "123"));
         users.add(new User("1234", "Katia", "Katia@gmail.com", 123456789, "1234"));
@@ -54,6 +54,22 @@ public class UtilitarioTest {
         usersList = utilitarioTest.createListUserAndPassword();
         assertThat(users, CoreMatchers.is(usersList));
     }
+
+
+    @Test
+    public void checkListAttributesToUsersWithAllIndexFail() {
+
+        ArrayList<User> users = new ArrayList<User>();
+
+        users.add(new User("1234", "Katia", "Katia@gmail.com", 123456789, "1234"));
+        users.add(new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1"));
+        users.add(new User("12", "Thalyta", "Thalyta@gmail.com", 9899999, "12"));
+        users.add(new User("123", "Erica", "Erica@gmail.com", 123456789, "123"));
+
+        usersList = utilitarioTest.createListUserAndPassword();
+        assertThat(users, CoreMatchers.not(usersList));
+    }
+
 
     @Test
     public void shouldHaveTheSizeDesiredListItens(){

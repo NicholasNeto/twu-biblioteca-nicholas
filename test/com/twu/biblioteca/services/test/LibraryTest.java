@@ -27,7 +27,7 @@ public class LibraryTest {
 
 
         user = new User("1", "Nicholas", "Nicholas@gmail.com", 123456789, "1313");
-        library = new Library(user);
+        library = new Library();
 
         itemsList =  library.getItemsList();
 
@@ -38,7 +38,6 @@ public class LibraryTest {
     public void shuldLendABookWithSuccessful() {
 
         String borrowMessage = library.borrowLibraryMedia("1");
-
         assertEquals("Thank you! Enjoy the book", borrowMessage);
     }
 
@@ -56,7 +55,7 @@ public class LibraryTest {
         library.borrowLibraryMedia("1");
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.UNAVAILABLE);
 
-        assertEquals("Thank you for returning the book", library.returMediaToTheLibrary("1"));
+        assertEquals("Thank you for returning the book", library.returnMediaToTheLibrary("1"));
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.AVAILABLE);
 
     }
@@ -67,11 +66,11 @@ public class LibraryTest {
         library.borrowLibraryMedia("1");
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.UNAVAILABLE);
 
-        library.returMediaToTheLibrary("1");
+        library.returnMediaToTheLibrary("1");
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.AVAILABLE);
 
         // Try to return a book that has already been returned
-        assertEquals("This is not a valid book to return", library.returMediaToTheLibrary("1"));
+        assertEquals("This is not a valid book to return", library.returnMediaToTheLibrary("1"));
         assertFalse(itemsList.get(0).getStatusEnum() == StatusEnum.UNAVAILABLE);
     }
 
@@ -96,7 +95,7 @@ public class LibraryTest {
         library.borrowLibraryMedia("5");
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.UNAVAILABLE);
 
-        assertEquals("Thank you for returning the movie", library.returMediaToTheLibrary("5"));
+        assertEquals("Thank you for returning the movie", library.returnMediaToTheLibrary("5"));
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.AVAILABLE);
 
     }
@@ -107,11 +106,11 @@ public class LibraryTest {
         library.borrowLibraryMedia("5");
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.UNAVAILABLE);
 
-        library.returMediaToTheLibrary("5");
+        library.returnMediaToTheLibrary("5");
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.AVAILABLE);
 
         // Try to return a movie that has already been returned
-        assertEquals("This is not a valid movie to return", library.returMediaToTheLibrary("5"));
+        assertEquals("This is not a valid movie to return", library.returnMediaToTheLibrary("5"));
         assertFalse(itemsList.get(4).getStatusEnum() == StatusEnum.UNAVAILABLE);
     }
 
@@ -121,7 +120,6 @@ public class LibraryTest {
 
         _bookList.add(new Book("1", "TDD", "Kent", 2005));
         _bookList.add(new Book("2", "Design Patterns", "Fowler", 2004));
-        //library.setBookList(_bookList);
 
         assertEquals(String.format("%20s %20s %20s %20d %20s\n%20s %20s %20s %20d %20s", "1",
                 "TDD", "Kent", 2005, "AVAILABLE", "2", "Design Patterns", "Fowler", 2004, "AVAILABLE"), library.getMediasAsString(_bookList));
@@ -131,7 +129,7 @@ public class LibraryTest {
     public void shouldShowATableOfBooks() {
 
 
-        ItemsLibrary a = library.getItemLibraryAvaible();
+        ItemsLibrary a = library.getItemsByStatus(StatusEnum.AVAILABLE);
 
         String listaDesejadaDeBokk =  String.format("%20s %20s %20s %20s %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
@@ -151,7 +149,7 @@ public class LibraryTest {
     @Test
     public void shouldShowATableOfMovies() {
 
-        ItemsLibrary a = library.getItemLibraryAvaible();
+        ItemsLibrary a = library.getItemsByStatus(StatusEnum.AVAILABLE);
 
        String listaDesejadaDeMovie =  String.format("%20s %20s %20s %20s %20s\n"
                        + "%20s %20s %20s %20d %20s\n"
@@ -178,7 +176,7 @@ public class LibraryTest {
                 "ID", "Name", "Authors", "Years", "Status", "1", "TDD", "Kent", 2000, "UNAVAILABLE");
 
         library.borrowLibraryMedia("1");
-        ItemsLibrary itemsLibrary = library.getItemsUnavailable();
+        ItemsLibrary itemsLibrary = library.getItemsByStatus(StatusEnum.UNAVAILABLE);
 
         assertEquals(expectBooksUnavailableList, library.showMediaInTable(itemsLibrary.getBookList()));
     }
@@ -190,7 +188,7 @@ public class LibraryTest {
                 "ID", "Name", "Authors", "Years", "Status", "5", "A luz", "Nicholas", 2000, "UNAVAILABLE");
 
         library.borrowLibraryMedia("5");
-        ItemsLibrary itemsLibrary = library.getItemsUnavailable();
+        ItemsLibrary itemsLibrary = library.getItemsByStatus(StatusEnum.UNAVAILABLE);
 
         assertEquals(expectMoviesUnavailableList, library.showMediaInTable(itemsLibrary.getMovieList()));
     }

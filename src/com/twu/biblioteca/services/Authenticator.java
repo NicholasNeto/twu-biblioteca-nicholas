@@ -3,11 +3,11 @@ package com.twu.biblioteca.services;
 
 import com.twu.biblioteca.models.User;
 import com.twu.biblioteca.util.Utilitaria;
-import javafx.beans.binding.ObjectExpression;
+
 
 import java.util.ArrayList;
 
-public class Autheticator {
+public class Authenticator {
 
     private User user;
     Utilitaria util = new Utilitaria();

@@ -7,7 +7,6 @@ public abstract class Item {
     private String name;
     private int year;
     private StatusEnum statusEnum;
-    User possessor;
 
     Item (String id, String name, int year){
         this.id = id;
@@ -15,8 +14,6 @@ public abstract class Item {
         this.year = year;
 
     }
-
-
 
     public StatusEnum getStatusEnum() {
         return statusEnum;
