@@ -2,6 +2,7 @@ package com.twu.biblioteca.services;
 
 
 import com.twu.biblioteca.models.*;
+import com.twu.biblioteca.util.MessagesUtil;
 import com.twu.biblioteca.util.ScannerUtil;
 
 import java.util.ArrayList;
@@ -58,12 +59,13 @@ public class Menu {
                     System.out.println("Print the ID number of the book you want to return");
                     String  optionsChosenToRetunrMovie = scannerUtil.readKeyBoardThenReturnString();
                     result = library.returnMediaToTheLibrary(optionsChosenToRetunrMovie);
-                    System.out.println(result);
+                    System.out.println(result + MessagesUtil.BOOK_LABEL);
                     return result;
 
                 case 4:
 //                    ArrayList<Item> listItemUnavailable = ;
                     result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE, Book.class));
+
                     System.out.println(result);
                     return result;
 

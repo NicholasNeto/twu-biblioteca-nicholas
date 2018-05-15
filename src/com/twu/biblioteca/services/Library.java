@@ -72,23 +72,13 @@ public class Library {
 
         String message = "LOL";
 
-        for(Item item :itemsList){
-            if(item.getId().equals(id)){
-                if(item instanceof Book){
-                    if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
-                        item.setStatusEnum(StatusEnum.AVAILABLE);
-                        message = MessagesUtil.RETURN_BOOK_SUCCESSFULLY;
-                    } else {
-                        message =  MessagesUtil.FAILED_BOOK_RETURN;
-                    }
-                }else if(item instanceof Movie){
-
-                    if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
-                        item.setStatusEnum(StatusEnum.AVAILABLE);
-                        message = MessagesUtil.RETURN_MOVIE_SUCCESSFULLY;
-                    } else {
-                        message = MessagesUtil.FAILED_MOVIE_RETURN;
-                    }
+        for(Item item :itemsList) {
+            if (item.getId().equals(id)) {
+                if (item.getStatusEnum().equals(StatusEnum.UNAVAILABLE)) {
+                    item.setStatusEnum(StatusEnum.AVAILABLE);
+                    message = MessagesUtil.RETURN_MEDIA_SUCCESSFULLY;
+                } else {
+                    message = MessagesUtil.FAILED_BOOK_RETURN;
                 }
             }
         }
@@ -98,7 +88,6 @@ public class Library {
 
     public <T> ArrayList<Item > getItemsByStatus(StatusEnum statusEnum, Class<T> clazz ){
         ArrayList<Item> listItem = new  ArrayList<Item>();
-
         for (Item item: itemsList) {
 
             if(item.getStatusEnum().equals(statusEnum)) {

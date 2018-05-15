@@ -11,8 +11,11 @@ public class MessagesUtil {
 
     public static final String FAILURE_MOVIE_BORROWED = "That movie is not available.";
 
+    public static final String MOVIE_LABEL = "Movie";
 
-    public static final String RETURN_BOOK_SUCCESSFULLY = "Thank you for returning the book";
+    public static final String BOOK_LABEL = "Movie";
+
+    public static final String RETURN_MEDIA_SUCCESSFULLY = "Thank you for returning the ";
 
     public static final String FAILED_BOOK_RETURN = "This is not a valid book to return";
 

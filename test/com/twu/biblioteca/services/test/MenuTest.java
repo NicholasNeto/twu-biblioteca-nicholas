@@ -4,6 +4,7 @@ import com.twu.biblioteca.models.User;
 import com.twu.biblioteca.services.Authenticator;
 import com.twu.biblioteca.services.Menu;
 import com.twu.biblioteca.services.Library;
+import com.twu.biblioteca.util.MessagesUtil;
 import com.twu.biblioteca.util.ScannerUtil;
 
 
@@ -145,7 +146,7 @@ public class MenuTest {
     public void shouldReturnBookWithSucessful(){
         //Given
 
-        String successufulMensage = "Thank you for returning the book";
+        String successufulMensage =  MessagesUtil.SUCCESS_BOOK_BORROWED + MessagesUtil.BOOK_LABEL;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -252,7 +253,7 @@ public class MenuTest {
     public void shouldReturnMovieWithSucessful(){
         //Given
 
-        String successufulMensage = "Thank you for returning the movie";
+        String successufulMensage = MessagesUtil.SUCCESS_MOVIE_BORROWED + MessagesUtil.MOVIE_LABEL;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
