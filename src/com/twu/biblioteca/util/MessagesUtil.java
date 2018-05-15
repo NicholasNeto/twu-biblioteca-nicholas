@@ -2,9 +2,9 @@ package com.twu.biblioteca.util;
 
 public class MessagesUtil {
 
-    public static final String SUCCESS_BOOK_BORROWED = "Thank you! Enjoy the book";
+    public static final String SUCCESS_MEDIA_BORROWED = "Thank you! Enjoy the ";
 
-    public static final String FAILURE_BOOK_BORROWED = "That book is not available.";
+    public static final String FAILURE_MEDIA_BORROWED = " is not available.";
 
 
     public static final String SUCCESS_MOVIE_BORROWED = "Thank you! Enjoy the movie";
