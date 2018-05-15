@@ -45,27 +45,15 @@ public class Library {
     public String borrowLibraryMedia(String id) {
         String message = "LOL";
 
-        for(Item item :itemsList){
-
-
-
-            if(item.getId().equals(id)){
-                if(item instanceof Book){
-                    if(item.getStatusEnum() == StatusEnum.AVAILABLE){
-                        item.setStatusEnum(StatusEnum.UNAVAILABLE);
-                        message = MessagesUtil.SUCCESS_BOOK_BORROWED;
-                    } else {
-                        message = MessagesUtil.FAILURE_BOOK_BORROWED;
-                    }
-
-                }else if(item instanceof Movie){
-                    if(item.getStatusEnum() == StatusEnum.AVAILABLE){
-                        item.setStatusEnum(StatusEnum.UNAVAILABLE);
-                        message = MessagesUtil.SUCCESS_MOVIE_BORROWED;
-                    } else{
-                        message = MessagesUtil.FAILURE_MOVIE_BORROWED;
-                    }
+        for(Item item :itemsList) {
+            if (item.getId().equals(id)) {
+                if (item.getStatusEnum().equals(StatusEnum.AVAILABLE)) {
+                    item.setStatusEnum(StatusEnum.UNAVAILABLE);
+                    message = MessagesUtil.SUCCESS_MEDIA_BORROWED;
+                } else {
+                    message = MessagesUtil.FAILURE_MEDIA_BORROWED;
                 }
+
             }
         }
         return message;
