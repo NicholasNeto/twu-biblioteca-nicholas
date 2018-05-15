@@ -129,7 +129,7 @@ public class LibraryTest {
     public void shouldShowATableOfBooks() {
 
 
-        ItemsLibrary a = library.getItemsByStatus(StatusEnum.AVAILABLE);
+        ArrayList<Item> listItem = library.getItemsByStatus(StatusEnum.AVAILABLE);
 
         String listaDesejadaDeBokk =  String.format("%20s %20s %20s %20s %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
@@ -142,7 +142,7 @@ public class LibraryTest {
                 "3",  "Harry Potter", "Kent", 2002, "AVAILABLE",
                 "4", "The Lord of the Rings", "Peter Jackson", 2003, "AVAILABLE");
 
-        assertEquals( listaDesejadaDeBokk, library.showMediaInTable(a.getBookList()));
+        assertEquals( listaDesejadaDeBokk, library.showMediaInTable(listItem));
 
     }
 

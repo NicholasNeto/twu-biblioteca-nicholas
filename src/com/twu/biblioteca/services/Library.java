@@ -50,17 +50,17 @@ public class Library {
                 if(item instanceof Book){
                     if(item.getStatusEnum() == StatusEnum.AVAILABLE){
                         item.setStatusEnum(StatusEnum.UNAVAILABLE);
-                        message = MessagesUtil.SUCCESS_BOOK_BORED;
+                        message = MessagesUtil.SUCCESS_BOOK_BORROWED;
                     } else {
-                        message = "That book is not available.";
+                        message = MessagesUtil.FAILURE_BOOK_BORROWED;
                     }
 
                 }else if(item instanceof Movie){
                     if(item.getStatusEnum() == StatusEnum.AVAILABLE){
                         item.setStatusEnum(StatusEnum.UNAVAILABLE);
-                        message =  "Thank you! Enjoy the movie";
+                        message = MessagesUtil.SUCCESS_MOVIE_BORROWED;
                     } else{
-                        message = "That movie  is not available.";
+                        message = MessagesUtil.FAILURE_MOVIE_BORROWED;
                     }
                 }
             }
@@ -77,17 +77,17 @@ public class Library {
                 if(item instanceof Book){
                     if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
                         item.setStatusEnum(StatusEnum.AVAILABLE);
-                        message =  "Thank you for returning the book";
+                        message = MessagesUtil.RETURN_BOOK_SUCCESSFULLY;
                     } else {
-                        message =  "This is not a valid book to return";
+                        message =  MessagesUtil.FAILED_BOOK_RETURN;
                     }
                 }else if(item instanceof Movie){
 
                     if(item.getStatusEnum() == StatusEnum.UNAVAILABLE){
                         item.setStatusEnum(StatusEnum.AVAILABLE);
-                        message =  "Thank you for returning the movie";
+                        message = MessagesUtil.RETURN_MOVIE_SUCCESSFULLY;
                     } else {
-                        message =  "This is not a valid movie to return";
+                        message = MessagesUtil.FAILED_MOVIE_RETURN;
                     }
                 }
             }
@@ -95,23 +95,34 @@ public class Library {
         return message;
     }
 
-    public ItemsLibrary getItemsByStatus(StatusEnum statusEnum){
-        ArrayList<Book> booksList = new ArrayList<Book>();
-        ArrayList<Movie> moviesList = new ArrayList<Movie>();
+    public ArrayList<Item> getItemsByStatus(StatusEnum statusEnum, Book){
+
+        ArrayList<Item> listItem = new  ArrayList<Item>();
 
         for (Item item: itemsList) {
-            if(item instanceof Book){
-                if(item.getStatusEnum().equals(statusEnum)){
-                    booksList.add((Book) item);
-                }
-            } else if(item instanceof Movie){
-                if(item.getStatusEnum().equals(statusEnum)){
-                    moviesList.add((Movie) item);
-                }
+            if(item.getStatusEnum().equals(statusEnum)) {
+                auxiliarMetodo(Book, item )
+
+
             }
         }
 
-        return new ItemsLibrary(booksList, moviesList);
+        return listItem;
     }
+
+
+
+
+    public Item auxiliarMetodo(Item tipoDesejado, Item  ){
+
+        Item  = (tipoDesejado) item;
+
+
+       return item
+    }
+
+
+
+
 
 }
