@@ -102,7 +102,7 @@ public class Library {
         for (Item item: itemsList) {
 
             if(item.getStatusEnum().equals(statusEnum)) {
-                Item especificItem = (Item ) auxiliarMetodo(clazz, item);
+                Item especificItem = (Item ) getItemByType(clazz, item);
                 if(especificItem != null){
                     listItem.add(especificItem);
                 }
@@ -113,14 +113,12 @@ public class Library {
 
     }
 
-    public <T> T auxiliarMetodo(Class<T> clazz, Item item){
-
+    public <T> T getItemByType(Class<T> clazz, Item item){
         T item2 = null;
 
         if(item.getClass().equals(clazz)){
             item2 = (T) item;
         }
-
         return item2;
     }
 
