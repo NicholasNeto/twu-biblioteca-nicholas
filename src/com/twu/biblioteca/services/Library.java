@@ -101,7 +101,7 @@ public class Library {
 
         for (Item item: itemsList) {
             if(item.getStatusEnum().equals(statusEnum)) {
-                auxiliarMetodo(Book, item )
+                auxiliarMetodo(Book, item)
 
 
             }
