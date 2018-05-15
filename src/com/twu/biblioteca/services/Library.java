@@ -46,6 +46,9 @@ public class Library {
         String message = "LOL";
 
         for(Item item :itemsList){
+
+
+
             if(item.getId().equals(id)){
                 if(item instanceof Book){
                     if(item.getStatusEnum() == StatusEnum.AVAILABLE){
@@ -103,12 +106,12 @@ public class Library {
     }
 
     public <T> T getItemByType(Class<T> clazz, Item item){
-        T item2 = null;
+        T itemByType = null;
 
         if(item.getClass().equals(clazz)){
-            item2 = (T) item;
+            itemByType = (T) item;
         }
-        return item2;
+        return itemByType;
     }
 
 }
