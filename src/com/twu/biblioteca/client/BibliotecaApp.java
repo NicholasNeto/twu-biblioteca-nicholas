@@ -19,7 +19,7 @@ public class BibliotecaApp {
 
     }
 
-    private static void mountMenu(User user, Menu menuItens, ScannerUtil scannerUtil){
+    public static void mountMenu(User user, Menu menuItens, ScannerUtil scannerUtil){
 
         if(user.isLogged()){
 
@@ -27,15 +27,14 @@ public class BibliotecaApp {
 
             System.out.println(menuItens.getOptionsMenu());
 
-            Scanner scanner = new Scanner(System.in);
-            int input = scanner.nextInt();
+            int input = scannerUtil.readKeyBoardThenReturnInterger();
 
             System.out.println(menuItens.getOptionsMenu());
 
             while (input > 0){
                 menuItens.showOption(input, library, scannerUtil);
                 System.out.println(menuItens.getOptionsMenu());
-                input = scanner.nextInt();
+                input = scannerUtil.readKeyBoardThenReturnInterger();
             }
         } else {
             menuItens.getNoOpitionsMenu();

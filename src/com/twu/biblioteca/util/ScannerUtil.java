@@ -10,4 +10,10 @@ public class ScannerUtil {
         return String.valueOf(optionsChosen);
     }
 
+    public int readKeyBoardThenReturnInterger(){
+        Scanner scannerInputInterger = new Scanner(System.in);
+        return scannerInputInterger.nextInt();
+
+    }
+
 }
