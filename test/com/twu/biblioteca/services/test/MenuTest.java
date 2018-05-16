@@ -38,7 +38,7 @@ public class MenuTest {
     @Test
     public void shouldGetDadosOfUser(){
 
-       assertEquals("\tWelcome Bangalore Public Library" , menu.showWelcome());
+       assertEquals(MessagesUtil.WELCOME_IN_LIBRARY , menu.showWelcome());
 
     }
 
@@ -112,7 +112,7 @@ public class MenuTest {
     @Test
     public void shouldLenBookdWithSucessful(){
         //Given
-        String successMsg = "Thank you! Enjoy the book";
+        String successMsg = MessagesUtil.SUCCESS_MEDIA_BORROWED + MessagesUtil.BOOK_LABEL;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
 
@@ -130,7 +130,7 @@ public class MenuTest {
     public void shouldLenBookdWithFail(){
         //Given
 
-        String failMsg = "That book is not available.";
+        String failMsg = MessagesUtil.FAILURE_MEDIA_BORROWED + MessagesUtil.BOOK_LABEL;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -146,7 +146,7 @@ public class MenuTest {
     public void shouldReturnBookWithSucessful(){
         //Given
 
-        String successufulMensage =  MessagesUtil.SUCCESS_BOOK_BORROWED + MessagesUtil.BOOK_LABEL;
+        String successufulMensage =  MessagesUtil.RETURN_MEDIA_SUCCESSFULLY + MessagesUtil.BOOK_LABEL;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -162,7 +162,7 @@ public class MenuTest {
     public void shouldReturnBookWithSFail(){
         //Given
 
-        String failMensage = "This is not a valid book to return";
+        String failMensage = MessagesUtil.FAILED_MEDIA_RETURN + MessagesUtil.BOOK_LABEL;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -222,7 +222,8 @@ public class MenuTest {
     @Test
     public void shouldLenMoviedWithSucessful(){
         //Given
-        String successMsg = "Thank you! Enjoy the movie";
+        String successMsg = MessagesUtil.SUCCESS_MEDIA_BORROWED + MessagesUtil.MOVIE_LABEL;
+
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -237,7 +238,7 @@ public class MenuTest {
     public void shouldLenMoviedWithFail(){
         //Given
 
-        String failMsg = "That movie is not available.";
+        String failMsg = MessagesUtil.FAILURE_MEDIA_BORROWED + MessagesUtil.MOVIE_LABEL;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -253,7 +254,7 @@ public class MenuTest {
     public void shouldReturnMovieWithSucessful(){
         //Given
 
-        String successufulMensage = MessagesUtil.SUCCESS_MOVIE_BORROWED + MessagesUtil.MOVIE_LABEL;
+        String successufulMensage = MessagesUtil.RETURN_MEDIA_SUCCESSFULLY + MessagesUtil.MOVIE_LABEL;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -269,7 +270,7 @@ public class MenuTest {
     public void shouldReturnMovieWithSFail(){
         //Given
 
-        String failMensage = "This is not a valid movie to return";
+        String failMensage = "This is not a valid return Movie";
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -300,12 +301,11 @@ public class MenuTest {
         assertEquals(expectMoviesUnavailableList, resultForOpt4);
     }
 
-
     @Test
     public void shoulPrintAMustLeaveMessage(){
         //Given
 
-        String successufulMensage = "See you  later!";
+        String successufulMensage = MessagesUtil.WANT_TO_LEAVE;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When
@@ -318,7 +318,7 @@ public class MenuTest {
     @Test
     public void shouldPrintADefaultMessage(){
         //Given
-        String successufulMensage = "Select a valid option!";
+        String successufulMensage = MessagesUtil.SELECT_OTHER_OPTION_VALID;
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
 
         // When

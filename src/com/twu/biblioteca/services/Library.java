@@ -69,13 +69,12 @@ public class Library {
                     item.setStatusEnum(StatusEnum.AVAILABLE);
                     message = MessagesUtil.RETURN_MEDIA_SUCCESSFULLY;
                 } else {
-                    message = MessagesUtil.FAILED_BOOK_RETURN;
+                    message = MessagesUtil.FAILED_MEDIA_RETURN;
                 }
             }
         }
         return message;
     }
-
 
     public <T> ArrayList<Item > getItemsByStatus(StatusEnum statusEnum, Class<T> clazz ){
         ArrayList<Item> listItem = new  ArrayList<Item>();

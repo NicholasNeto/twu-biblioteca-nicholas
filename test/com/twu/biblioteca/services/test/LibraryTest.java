@@ -1,8 +1,8 @@
 package com.twu.biblioteca.services.test;
 
 import com.twu.biblioteca.models.*;
-import com.twu.biblioteca.models.test.MovieTest;
 import com.twu.biblioteca.services.Library;
+import com.twu.biblioteca.util.MessagesUtil;
 import com.twu.biblioteca.util.Utilitaria;
 import org.junit.Before;
 import org.junit.Test;
@@ -38,31 +38,41 @@ public class LibraryTest {
     @Test
     public void shuldLendABookWithSuccessful() {
 
+        String expect = MessagesUtil.SUCCESS_MEDIA_BORROWED;
+
         String borrowMessage = library.borrowLibraryMedia("1");
-        assertEquals("Thank you! Enjoy the book", borrowMessage);
+        assertEquals(expect, borrowMessage);
     }
 
     @Test
     public void shouldNotLendABook() {
 
+        String expect = MessagesUtil.FAILURE_MEDIA_BORROWED;
+
         library.borrowLibraryMedia("1");
-        assertEquals("That book is not available.", library.borrowLibraryMedia("1"));
+        assertEquals(expect, library.borrowLibraryMedia("1"));
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.UNAVAILABLE);
     }
 
     @Test
     public void shouldReturnBookWithSuccessful() {
 
+
+        String expect = MessagesUtil.RETURN_MEDIA_SUCCESSFULLY;
+
         library.borrowLibraryMedia("1");
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.UNAVAILABLE);
 
-        assertEquals("Thank you for returning the book", library.returnMediaToTheLibrary("1"));
+        assertEquals(expect, library.returnMediaToTheLibrary("1"));
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.AVAILABLE);
 
     }
 
     @Test
     public void shouldNotReturnBook() {
+
+
+        String expect = MessagesUtil.FAILED_MEDIA_RETURN;
 
         library.borrowLibraryMedia("1");
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.UNAVAILABLE);
@@ -71,23 +81,27 @@ public class LibraryTest {
         assertTrue(itemsList.get(0).getStatusEnum() == StatusEnum.AVAILABLE);
 
         // Try to return a book that has already been returned
-        assertEquals("This is not a valid book to return", library.returnMediaToTheLibrary("1"));
+        assertEquals(expect, library.returnMediaToTheLibrary("1"));
         assertFalse(itemsList.get(0).getStatusEnum() == StatusEnum.UNAVAILABLE);
     }
 
     @Test
     public void shuldLendAMovieWithSuccessful() {
 
+        String expect = MessagesUtil.SUCCESS_MEDIA_BORROWED;
+
         String borrowMessage = library.borrowLibraryMedia("5");
-        assertEquals("Thank you! Enjoy the movie", borrowMessage);
+        assertEquals(expect, borrowMessage);
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.UNAVAILABLE);
     }
 
     @Test
     public void shouldNotLendAMovie() {
 
+        String expect = MessagesUtil.FAILURE_MEDIA_BORROWED;
+
         library.borrowLibraryMedia("5");
-        assertEquals("That movie is not available.", library.borrowLibraryMedia("5"));
+        assertEquals(expect, library.borrowLibraryMedia("5"));
     }
 
     @Test
@@ -96,13 +110,16 @@ public class LibraryTest {
         library.borrowLibraryMedia("5");
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.UNAVAILABLE);
 
-        assertEquals("Thank you for returning the movie", library.returnMediaToTheLibrary("5"));
+        assertEquals(MessagesUtil.RETURN_MEDIA_SUCCESSFULLY + MessagesUtil.MOVIE_LABEL, library.returnMediaToTheLibrary("5") + MessagesUtil.MOVIE_LABEL);
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.AVAILABLE);
 
     }
 
     @Test
     public void shouldNotReturnMovie() {
+
+        String expect = MessagesUtil.FAILED_MEDIA_RETURN;
+
 
         library.borrowLibraryMedia("5");
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.UNAVAILABLE);
@@ -111,7 +128,7 @@ public class LibraryTest {
         assertTrue(itemsList.get(4).getStatusEnum() == StatusEnum.AVAILABLE);
 
         // Try to return a movie that has already been returned
-        assertEquals("This is not a valid movie to return", library.returnMediaToTheLibrary("5"));
+        assertEquals(expect , library.returnMediaToTheLibrary("5"));
         assertFalse(itemsList.get(4).getStatusEnum() == StatusEnum.UNAVAILABLE);
     }
 

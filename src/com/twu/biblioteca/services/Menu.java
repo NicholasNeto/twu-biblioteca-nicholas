@@ -1,11 +1,8 @@
 package com.twu.biblioteca.services;
 
-
 import com.twu.biblioteca.models.*;
 import com.twu.biblioteca.util.MessagesUtil;
 import com.twu.biblioteca.util.ScannerUtil;
-
-import java.util.ArrayList;
 
 public class Menu {
 
@@ -36,11 +33,9 @@ public class Menu {
         if (input >= 0) {
             int option;
             option = input;
-            ItemsLibrary itemsLibrary;
-            MenuImpl menuImpl = new MenuImpl();
-            String result = "";
 
-
+            String result = null;
+            
             switch (option) {
                 case 1:
                     result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE, Book.class));
@@ -48,24 +43,21 @@ public class Menu {
                     return result;
 
                 case 2:
-                    System.out.println("Print the ID number of the book you want to borrow");
+                    System.out.println(MessagesUtil.GET_ID_TO_BORROW);
                     String optionsChosenToBook = scannerUtil.readKeyBoardThenReturnString();
-                    result = library.borrowLibraryMedia(optionsChosenToBook);
-                           // lendBook(library, optionsChosenToBook);
+                    result = library.borrowLibraryMedia(optionsChosenToBook) + MessagesUtil.BOOK_LABEL;
                     System.out.println(result);
                     return  result;
 
                 case 3:
-                    System.out.println("Print the ID number of the book you want to return");
+                    System.out.println(MessagesUtil.GET_ID_TO_RETURNING);
                     String  optionsChosenToRetunrMovie = scannerUtil.readKeyBoardThenReturnString();
-                    result = library.returnMediaToTheLibrary(optionsChosenToRetunrMovie);
-                    System.out.println(result + MessagesUtil.BOOK_LABEL);
+                    result = library.returnMediaToTheLibrary(optionsChosenToRetunrMovie) + MessagesUtil.BOOK_LABEL;
+                    System.out.println(result);
                     return result;
 
                 case 4:
-//                    ArrayList<Item> listItemUnavailable = ;
                     result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE, Book.class));
-
                     System.out.println(result);
                     return result;
 
@@ -75,16 +67,16 @@ public class Menu {
                     return result;
 
                 case 6:
-                    System.out.println("Print the ID number of the film you want to borrow");
+                    System.out.println(MessagesUtil.GET_ID_TO_BORROW);
                     String  optionsChosenToMovie = scannerUtil.readKeyBoardThenReturnString();
-                    result = library.borrowLibraryMedia(optionsChosenToMovie);
+                    result = library.borrowLibraryMedia(optionsChosenToMovie) + MessagesUtil.MOVIE_LABEL;
                     System.out.println(result);
                     return result;
 
                 case 7:
-                    System.out.println("Print the ID number of the film you want to return");
+                    System.out.println(MessagesUtil.GET_ID_TO_RETURNING);
                     String  optionsChosenToReturnMovie = scannerUtil.readKeyBoardThenReturnString();
-                    result = library.returnMediaToTheLibrary(optionsChosenToReturnMovie);
+                    result = library.returnMediaToTheLibrary(optionsChosenToReturnMovie) + MessagesUtil.MOVIE_LABEL;;
                     System.out.println(result);
                     return result;
 
@@ -94,17 +86,17 @@ public class Menu {
                     return result;
 
                 case 0:
-                    result = "See you  later!";
+                    result = MessagesUtil.WANT_TO_LEAVE;
                     System.out.println(result);
                     return result;
 
                 default:
-                    result = "Select a valid option!";
+                    result = MessagesUtil.SELECT_OTHER_OPTION_VALID;
                     System.out.println(result);
                     return result;
             }
         }
-        return "Invalid Option";
+        return MessagesUtil.INVALID_OPTION;
     }
 
     public String getOptionsMenu() {
