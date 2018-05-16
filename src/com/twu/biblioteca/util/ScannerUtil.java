@@ -10,9 +10,4 @@ public class ScannerUtil {
         return String.valueOf(optionsChosen);
     }
 
-//    public int readKeyBoardThenReturnInt(){
-//        Scanner scannerInputInt = new Scanner(System.in);
-//        return  scannerInputInt.nextInt();
-//
-//    }
 }

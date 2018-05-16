@@ -35,7 +35,7 @@ public class Menu {
             option = input;
 
             String result = null;
-            
+
             switch (option) {
                 case 1:
                     result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE, Book.class));
