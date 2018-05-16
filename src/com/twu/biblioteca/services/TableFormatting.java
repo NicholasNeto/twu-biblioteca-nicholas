@@ -18,12 +18,7 @@ public class TableFormatting {
         String representation = MessagesUtil.EMPTY_LIST;
 
         for (Item media : mediaList) {
-
-            if (representation.isEmpty()) {
-                representation += media.toString();
-            } else {
-                representation += "\n" + media.toString();
-            }
+            representation += media.toString() + "\n";
         }
 
         return representation;

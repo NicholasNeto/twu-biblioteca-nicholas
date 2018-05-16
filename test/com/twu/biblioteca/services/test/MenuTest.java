@@ -92,7 +92,7 @@ public class MenuTest {
                         + "%20s %20s %20s %20d %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
-                        + "%20s %20s %20s %20d %20s",
+                        + "%20s %20s %20s %20d %20s\n",
                 "ID", "Name", "Authors", "Years", "Status",
                 "1", "TDD", "Kent", 2000, "AVAILABLE",
                 "2" , "Design Patterns" ,"Fowler", 2001,"AVAILABLE",
@@ -180,7 +180,7 @@ public class MenuTest {
     public void shouldPrintBookUnavailable(){
         //Given
 
-        String expectBooksUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
+        String expectBooksUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s\n",
                 "ID", "Name", "Authors", "Years", "Status", "1", "TDD", "Kent", 2000, "UNAVAILABLE");
 
         ScannerUtil scannerUtilMock = Mockito.mock(ScannerUtil.class);
@@ -202,7 +202,7 @@ public class MenuTest {
                         + "%20s %20s %20s %20d %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
-                        + "%20s %20s %20s %20d %20s",
+                        + "%20s %20s %20s %20d %20s\n",
                 "ID", "Name", "Authors", "Years", "Status",
                 "5", "A luz", "Nicholas", 2000, "AVAILABLE",
                 "6" , "Mochila Azul" ,"Nicols", 2001,"AVAILABLE",
@@ -287,7 +287,7 @@ public class MenuTest {
     @Test
     public void shouldPrintMovieUnavailable(){
         //Given
-        String expectMoviesUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
+        String expectMoviesUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s\n",
                 "ID", "Name", "Authors", "Years", "Status", "5", "A luz", "Nicholas", 2000, "UNAVAILABLE");
 
 

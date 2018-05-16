@@ -39,7 +39,7 @@ public class TableFormattingTest {
         _bookList.add(new Book("1", "TDD", "Kent", 2005));
         _bookList.add(new Book("2", "Design Patterns", "Fowler", 2004));
 
-        assertEquals(String.format("%20s %20s %20s %20d %20s\n%20s %20s %20s %20d %20s", "1",
+        assertEquals(String.format("%20s %20s %20s %20d %20s\n%20s %20s %20s %20d %20s\n", "1",
                 "TDD", "Kent", 2005, "AVAILABLE", "2", "Design Patterns", "Fowler", 2004, "AVAILABLE"), tableFormatting.getMediasAsString(_bookList));
     }
 
@@ -54,7 +54,7 @@ public class TableFormattingTest {
                         + "%20s %20s %20s %20d %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
-                        + "%20s %20s %20s %20d %20s",
+                        + "%20s %20s %20s %20d %20s\n",
                 "ID", "Name", "Authors", "Years", "Status",
                 "1", "TDD", "Kent", 2000, "AVAILABLE",
                 "2" , "Design Patterns" ,"Fowler", 2001,"AVAILABLE",
@@ -74,7 +74,7 @@ public class TableFormattingTest {
                         + "%20s %20s %20s %20d %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
                         + "%20s %20s %20s %20d %20s\n"
-                        + "%20s %20s %20s %20d %20s",
+                        + "%20s %20s %20s %20d %20s\n",
                 "ID", "Name", "Authors", "Years", "Status",
                 "5", "A luz", "Nicholas", 2000, "AVAILABLE",
                 "6" , "Mochila Azul" ,"Nicols", 2001,"AVAILABLE",
@@ -89,7 +89,7 @@ public class TableFormattingTest {
     @Test
     public void shouldSeeBooksUnavailable() {
 
-        String expectBooksUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
+        String expectBooksUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s\n",
                 "ID", "Name", "Authors", "Years", "Status", "1", "TDD", "Kent", 2000, "UNAVAILABLE");
 
         library.borrowLibraryMedia("1");
@@ -101,7 +101,7 @@ public class TableFormattingTest {
     @Test
     public void shouldSeeMoviesUnavailable() {
 
-        String expectMoviesUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s",
+        String expectMoviesUnavailableList = String.format("%20s %20s %20s %20s %20s\n%20s %20s %20s %20d %20s\n",
                 "ID", "Name", "Authors", "Years", "Status", "5", "A luz", "Nicholas", 2000, "UNAVAILABLE");
 
         library.borrowLibraryMedia("5");
