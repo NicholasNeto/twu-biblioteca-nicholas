@@ -33,12 +33,12 @@ public class Menu {
         if (input >= 0) {
             int option;
             option = input;
-
+            TableFormatting tableFormatting= new TableFormatting();
             String result = null;
 
             switch (option) {
                 case 1:
-                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE, Book.class));
+                    result = tableFormatting.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE, Book.class));
                     System.out.println(result);
                     return result;
 
@@ -57,12 +57,12 @@ public class Menu {
                     return result;
 
                 case 4:
-                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE, Book.class));
+                    result = tableFormatting.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE, Book.class));
                     System.out.println(result);
                     return result;
 
                 case 5:
-                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE, Movie.class));
+                    result = tableFormatting.showMediaInTable(library.getItemsByStatus(StatusEnum.AVAILABLE, Movie.class));
                     System.out.println(result);
                     return result;
 
@@ -81,7 +81,7 @@ public class Menu {
                     return result;
 
                 case 8:
-                    result = library.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE, Movie.class));
+                    result = tableFormatting.showMediaInTable(library.getItemsByStatus(StatusEnum.UNAVAILABLE, Movie.class));
                     System.out.println(result);
                     return result;
 
