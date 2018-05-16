@@ -1,6 +1,7 @@
 package com.twu.biblioteca.services;
 
 import com.twu.biblioteca.models.Item;
+import com.twu.biblioteca.util.MessagesUtil;
 
 import java.util.ArrayList;
 
@@ -14,7 +15,7 @@ public class TableFormatting {
     }
 
     public <T extends Item> String getMediasAsString(ArrayList<T> mediaList) {
-        String representation = "";
+        String representation = MessagesUtil.EMPTY_LIST;
 
         for (Item media : mediaList) {
 
@@ -24,6 +25,7 @@ public class TableFormatting {
                 representation += "\n" + media.toString();
             }
         }
+
         return representation;
     }
 

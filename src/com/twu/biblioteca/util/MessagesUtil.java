@@ -26,4 +26,6 @@ public class MessagesUtil {
 
     public static final String INVALID_OPTION =  "Invalid Option";
 
+    public static final String EMPTY_LIST = "Empty List";
+
 }
